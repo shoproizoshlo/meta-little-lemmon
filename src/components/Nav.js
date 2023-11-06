@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 export default function Nav() {
@@ -14,16 +14,12 @@ export default function Nav() {
             <Link to="/">About</Link>
           </li>
           <li>
-            <Link to="/">Online Reservation</Link>
+            <Link to="/booking">Online Reservation</Link>
           </li>
           <li>
             <Link to="/">Menu</Link>
           </li>
         </ul>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/" element={<About />} />
-        </Routes>
       </nav>
     </>
   );
