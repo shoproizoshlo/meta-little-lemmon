@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import "./Nav.css";
 
 export default function Nav() {
@@ -7,15 +8,22 @@ export default function Nav() {
       <nav>
         <ul className="d-md-flex">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/">Online Reservation</a>
+            <Link to="/">About</Link>
           </li>
           <li>
-            <a href="/">Menu</a>
+            <Link to="/">Online Reservation</Link>
+          </li>
+          <li>
+            <Link to="/">Menu</Link>
           </li>
         </ul>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<About />} />
+        </Routes>
       </nav>
     </>
   );
