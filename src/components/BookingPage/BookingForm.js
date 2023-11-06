@@ -38,11 +38,7 @@ export default function BookingForm({ availableTimes, dispatch }) {
           value={bookingTime}
           onChange={(e) => setBookingTime(e.target.value)}
         >
-          {availableTimes.map((time) => (
-            <option key={time} value={time}>
-              {time}
-            </option>
-          ))}
+          <option>1</option>
         </select>
         <label htmlFor="guests">Number of guests</label>
         <input
@@ -65,7 +61,8 @@ export default function BookingForm({ availableTimes, dispatch }) {
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <input type="submit" defaultValue="Make Your reservation" />
+        {/* <input type="submit" defaultValue="Make Your reservation" /> */}
+        <button type="submit">Book Now</button>
       </form>
     </>
   );
