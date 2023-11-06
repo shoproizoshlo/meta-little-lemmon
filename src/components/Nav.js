@@ -7,13 +7,13 @@ export default function Nav() {
       <nav>
         <ul className="d-md-flex">
           <li>
-            <a>Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a>Online Reservation</a>
+            <a href="/">Online Reservation</a>
           </li>
           <li>
-            <a>Menu</a>
+            <a href="/">Menu</a>
           </li>
         </ul>
       </nav>

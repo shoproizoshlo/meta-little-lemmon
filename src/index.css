@@ -1,3 +1,11 @@
+:root {
+  --primary-green: #495e57;
+  --primary-yellow: #f4ce14;
+  --secondary-peach: #ee9972;
+  --secondary-peach-light: #fbdabb;
+  --highlight-light: #edefee;
+  --highlight-dark: #333333;
+}
 /*Setting to zero*/
 * {
   padding: 0;
@@ -72,6 +80,7 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
+  font-family: "Markazi Text", serif;
 }
 /*--------------------*/
 /*Setting to zero*/
@@ -99,9 +108,23 @@ h6 {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: "Karla", sans-serif;
+  /* max-width: 65ch; */
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--highlight-dark);
 }
 main {
   flex: 1 1 auto;
+}
+h1 {
+  font-size: 40px;
+}
+.cta {
+  font-size: 18px;
+}
+.card-title {
+  font-size: 18px;
 }
 /* page container */
 .container {
@@ -109,6 +132,7 @@ main {
   margin: 40px auto 0 auto;
   padding: 0 15px;
 }
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 970px;

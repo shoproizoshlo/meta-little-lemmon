@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <header className="container d-md-flex justify-content-center">
-        <img />
+        <img alt="logo" />
         <Nav />
       </header>
     </>
