@@ -1,18 +1,17 @@
 import React from "react";
 import { useState } from "react";
 
-export default function BookingForm() {
-  const [date, setDate] = useState("");
+export default function BookingForm({ availableTimes, dispatch }) {
+  const [selectedDate, setSelectedDate] = useState("");
   const [guests, setGuests] = useState(2);
   const [occasion, setOccasion] = useState("");
-  const [availableTimes, setAvailableTimes] = useState([
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ]);
+  const [bookingTime, setBookingTime] = useState("");
+
+  function handleDateChange(e) {
+    const newSelectedDate = e.target.value;
+    setSelectedDate(newSelectedDate);
+    dispatch({ type: "UPDATE_TIMES", date: newSelectedDate });
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,15 +28,15 @@ export default function BookingForm() {
           type="date"
           id="res-date"
           name="res-date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
+          value={selectedDate}
+          onChange={(e) => handleDateChange(e)}
         />
         <label htmlFor="res-time">Choose time</label>
         <select
           id="res-time"
           name="res-time"
-          value={availableTimes}
-          onChange={(e) => setAvailableTimes(e.target.value)}
+          value={bookingTime}
+          onChange={(e) => setBookingTime(e.target.value)}
         >
           {availableTimes.map((time) => (
             <option key={time} value={time}>
