@@ -3,7 +3,7 @@ import React from "react";
 export default function Main() {
   return (
     <>
-      <main>Main</main>
+      <main className="container d-md-flex flex-column">Main</main>
     </>
   );
 }

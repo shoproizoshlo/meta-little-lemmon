@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <footer>Footer</footer>
+      <footer className="container d-md-flex flex-column">Footer</footer>
     </>
   );
 }
