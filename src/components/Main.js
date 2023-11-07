@@ -14,6 +14,7 @@ function reducer(state, action) {
   }
 }
 
+const initialTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 // change the availableTimes based on the selected date
 export function updateTimes(selectedDate) {
   return initialTimes;
@@ -23,8 +24,6 @@ export function updateTimes(selectedDate) {
 export function initializeTimes() {
   return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 }
-
-const initialTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 
 export default function Main() {
   const [availableTimes, dispatch] = useReducer(reducer, initialTimes);
