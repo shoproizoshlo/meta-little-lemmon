@@ -1,16 +1,23 @@
 import React from "react";
 import { useState } from "react";
 
-export default function BookingForm({ availableTimes, dispatch }) {
-  const [selectedDate, setSelectedDate] = useState("");
+export default function BookingForm(props) {
   const [guests, setGuests] = useState(2);
   const [occasion, setOccasion] = useState("");
-  const [bookingTime, setBookingTime] = useState("");
+  const [date, setDate] = useState("");
+  const [finalTime, setFinalTime] = useState(
+    props.availableTimes.map((times) => <option>{times}</option>)
+  );
 
   function handleDateChange(e) {
-    const newSelectedDate = e.target.value;
-    setSelectedDate(newSelectedDate);
-    dispatch({ type: "UPDATE_TIMES", date: newSelectedDate });
+    setDate(e.target.value);
+
+    var stringify = e.target.value;
+    const date = new Date(stringify);
+
+    props.updateTimes(date);
+
+    setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
   }
 
   const handleSubmit = (e) => {
@@ -28,17 +35,12 @@ export default function BookingForm({ availableTimes, dispatch }) {
           type="date"
           id="res-date"
           name="res-date"
-          value={selectedDate}
+          value={date}
           onChange={(e) => handleDateChange(e)}
         />
         <label htmlFor="res-time">Choose time</label>
-        <select
-          id="res-time"
-          name="res-time"
-          value={bookingTime}
-          onChange={(e) => setBookingTime(e.target.value)}
-        >
-          <option>1</option>
+        <select id="res-time" name="res-time">
+          {finalTime}
         </select>
         <label htmlFor="guests">Number of guests</label>
         <input

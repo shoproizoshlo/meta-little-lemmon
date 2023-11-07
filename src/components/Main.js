@@ -4,29 +4,29 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
 import BookingPage from "./BookingPage/BookingPage";
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "UPDATE_TIMES":
-      return action.times;
+// function reducer(state, action) {
+//   switch (action.type) {
+//     case "UPDATE_TIMES":
+//       return action.times;
 
-    default:
-      return state;
-  }
-}
+//     default:
+//       return state;
+//   }
+// }
 
-const initialTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+// const initialTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 // change the availableTimes based on the selected date
-export function updateTimes(selectedDate) {
-  return initialTimes;
-}
+// export function updateTimes(selectedDate) {
+//   return initialTimes;
+// }
 
 // create the initial state for the availableTimes
-export function initializeTimes() {
-  return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-}
+// export function initializeTimes() {
+//   return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+// }
 
 export default function Main() {
-  const [availableTimes, dispatch] = useReducer(reducer, initialTimes);
+  // const [availableTimes, dispatch] = useReducer(reducer, initialTimes);
 
   return (
     <>
@@ -34,15 +34,7 @@ export default function Main() {
         <p>Main</p>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route
-            path="/booking"
-            element={
-              <BookingPage
-                availableTimes={availableTimes}
-                dispatch={dispatch}
-              />
-            }
-          />
+          <Route path="/booking" element={<BookingPage />} />
         </Routes>
       </main>
     </>
