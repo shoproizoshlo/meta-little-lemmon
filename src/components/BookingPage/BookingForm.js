@@ -6,7 +6,9 @@ export default function BookingForm(props) {
   const [occasion, setOccasion] = useState("");
   const [date, setDate] = useState("");
   const [finalTime, setFinalTime] = useState(
-    props.availableTimes.map((times) => <option>{times}</option>)
+    props.availableTimes.map((times) => (
+      <option key={times}>{times}</option>
+    ))
   );
 
   function handleDateChange(e) {
@@ -17,7 +19,11 @@ export default function BookingForm(props) {
 
     props.updateTimes(date);
 
-    setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
+    setFinalTime(
+      props.availableTimes.map((times) => (
+        <option key={times}>{times}</option>
+      ))
+    );
   }
 
   const handleSubmit = (e) => {
