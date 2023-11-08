@@ -25,26 +25,9 @@ export default function BookingForm(props) {
     );
   }
 
-  // const formik = useFormik({
-  //   initialValues: {
-  //     guests: "",
-  //     occasion: "",
-  //     email: "",
-  //   },
-  //   validationSchema: Yup.object({
-  //     guests: Yup.number()
-  //       .max(1, "Minimum 1 guest please")
-  //       .max(10, "Maximum 10 guests or email us if you want more guests")
-  //       .required("Required"),
-  //     occasion: Yup.string().required("Required"),
-  //     email: Yup.string().email("Invalid email address").required("Required"),
-  //   }),
-  //   onSubmit: (values) => {
-  //     alert(JSON.stringify(values, null, 2));
-  //   },
-  // });
   return (
     <>
+      <p>This is BookingForm</p>
       <Formik
         initialValues={{
           guests: "",
@@ -61,7 +44,7 @@ export default function BookingForm(props) {
             .email("Invalid email address")
             .required("Required"),
           occasion: Yup.string()
-            .oneOf(["birthday", "anniversary"], "Invalid Occasion Type")
+            .oneOf(["birthday", "anniversary"])
             .required("Required"),
         })}
         onSubmit={(values, { setSubmitting }) => {
@@ -90,9 +73,9 @@ export default function BookingForm(props) {
           <ErrorMessage name="guests" />
 
           <MySelect label="Occasion" name="occasion">
-            <option value="">Select a job type</option>
-            <option value="designer">Birthday</option>
-            <option value="development">Anniversary</option>
+            <option value="">Select a occasion</option>
+            <option value="birthday">Birthday</option>
+            <option value="anniversary">Anniversary</option>
           </MySelect>
 
           <label htmlFor="email">Email Address</label>
@@ -102,63 +85,6 @@ export default function BookingForm(props) {
           <button type="submit">Book Now</button>
         </Form>
       </Formik>
-      <p>This is BookingForm</p>
-      {/* <form
-        onSubmit={formik.handleSubmit}
-        style={{ display: "grid", maxWidth: 200, gap: 20 }}
-      > */}
-      {/* <label htmlFor="res-date">Choose date</label>
-        <input
-          type="date"
-          id="res-date"
-          name="res-date"
-          value={date}
-          onChange={(e) => handleDateChange(e)}
-        />
-        <label htmlFor="res-time">Choose time</label>
-        <select id="res-time" name="res-time">
-          {finalTime}
-        </select> */}
-
-      {/* <label htmlFor="guests">Number of guests</label>
-        <input
-          type="number"
-          placeholder={1}
-          id="guests"
-          name="guests"
-          onChange={formik.handleChange}
-          value={formik.values.guests}
-        />
-        {formik.touched.guests && formik.errors.guests ? (
-          <div>{formik.errors.guests}</div>
-        ) : null} */}
-
-      {/* <label htmlFor="occasion">Occasion</label>
-        <select
-          id="occasion"
-          name="occasion"
-          onChange={formik.handleChange}
-          value={formik.values.occasion}
-        >
-          <option>Birthday</option>
-          <option>Anniversary</option>
-        </select>
-        {formik.errors.occasion ? <div>{formik.errors.occasion}</div> : null} */}
-
-      {/* <label htmlFor="email">Email Address</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          onChange={formik.handleChange}
-          value={formik.values.email}
-        />
-        {formik.touched.email && formik.errors.email ? (
-          <div>{formik.errors.email}</div>
-        ) : null} */}
-
-      {/* <button type="submit">Book Now</button> */}
-      {/* </form> */}
     </>
   );
 }
