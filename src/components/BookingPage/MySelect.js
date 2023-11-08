@@ -1,6 +1,5 @@
 import React from "react";
-import { Formik, Form, useField } from "formik";
-import * as Yup from "yup";
+import { useField } from "formik";
 
 export default function MySelect({ label, ...props }) {
   const [field, meta] = useField(props);
