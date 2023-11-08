@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import MySelect from "./MySelect";
+import MyField from "./MyField";
 
 export default function BookingForm(props) {
   const [guests, setGuests] = useState(2);
@@ -12,27 +13,31 @@ export default function BookingForm(props) {
     props.availableTimes.map((times) => <option key={times}>{times}</option>)
   );
 
-  function handleDateChange(e) {
-    setDate(e.target.value);
+  // function handleDateChange(e) {
+  //   setDate(e.target.value);
 
-    var stringify = e.target.value;
-    const date = new Date(stringify);
+  //   const date = new Date(e.target.value);
 
-    props.updateTimes(date);
+  //   props.updateTimes(date);
 
-    setFinalTime(
-      props.availableTimes.map((times) => <option key={times}>{times}</option>)
-    );
-  }
+  //   setFinalTime(
+  //     props.availableTimes.map((times) => <option key={times}>{times}</option>)
+  //   );
+  // }
 
   return (
     <>
       <p>This is BookingForm</p>
       <Formik
         initialValues={{
+          date: "",
+          time: "",
           guests: "",
           occasion: "",
           email: "",
+          textA: "",
+          textB: "",
+          textC: "",
         }}
         validationSchema={Yup.object({
           guests: Yup.number()
@@ -56,16 +61,28 @@ export default function BookingForm(props) {
         }}
       >
         <Form>
-          <label htmlFor="res-date">Choose date</label>
-          {/* <Field name="date" type="date" /> */}
+          <label>
+            textA
+            <Field name="textA" />
+          </label>
+          <label>
+            textB
+            <Field name="textB" />
+          </label>
+          <label>
+            textC
+            <MyField name="textC" />
+          </label>
 
-          <input
+          <label htmlFor="res-date">Choose date</label>
+          <MyField name="date" type="date" />
+          {/* <input
             type="date"
             id="res-date"
             name="res-date"
             value={date}
             onChange={(e) => handleDateChange(e)}
-          />
+          /> */}
 
           <MySelect label="Choose time" name="time">
             {finalTime}
