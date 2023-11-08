@@ -32,7 +32,8 @@ export default function BookingForm(props) {
     },
     validationSchema: Yup.object({
       guests: Yup.number()
-        .max(10, "Maximum be 10 guests or email us if you want more guests")
+        .max(1, "Minimum 1 guest please")
+        .max(10, "Maximum 10 guests or email us if you want more guests")
         .required("Required"),
       occasion: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
