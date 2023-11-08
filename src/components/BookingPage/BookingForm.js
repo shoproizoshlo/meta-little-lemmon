@@ -39,12 +39,13 @@ export default function BookingForm(props) {
             .max(1, "Minimum 1 guest please")
             .max(10, "Maximum 10 guests or email us if you want more guests")
             .required("Required"),
-          occasion: Yup.string().required("Required"),
-          email: Yup.string()
-            .email("Invalid email address")
-            .required("Required"),
+
           occasion: Yup.string()
             .oneOf(["birthday", "anniversary"])
+            .required("Required"),
+
+          email: Yup.string()
+            .email("Invalid email address")
             .required("Required"),
         })}
         onSubmit={(values, { setSubmitting }) => {
@@ -56,6 +57,8 @@ export default function BookingForm(props) {
       >
         <Form>
           <label htmlFor="res-date">Choose date</label>
+          {/* <Field name="date" type="date" /> */}
+
           <input
             type="date"
             id="res-date"
@@ -67,6 +70,7 @@ export default function BookingForm(props) {
           <MySelect label="Choose time" name="time">
             {finalTime}
           </MySelect>
+          <ErrorMessage name="time" />
 
           <label htmlFor="guests">Number of guests</label>
           <Field name="guests" type="number" />
