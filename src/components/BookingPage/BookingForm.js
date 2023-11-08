@@ -63,10 +63,10 @@ export default function BookingForm(props) {
             value={date}
             onChange={(e) => handleDateChange(e)}
           />
-          <label htmlFor="res-time">Choose time</label>
-          <select id="res-time" name="res-time">
+
+          <MySelect label="Choose time" name="time">
             {finalTime}
-          </select>
+          </MySelect>
 
           <label htmlFor="guests">Number of guests</label>
           <Field name="guests" type="number" />
