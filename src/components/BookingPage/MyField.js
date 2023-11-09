@@ -5,22 +5,22 @@ import { updateTimes } from "./BookingPage";
 
 const MyField = (props) => {
   const {
-    values: { textA, textB, date, finalTime },
+    values: { textA, textB, date },
     touched,
     setFieldValue,
   } = useFormikContext();
   const [field, meta] = useField(props);
-  const [selecteddate, setSelectedDate] = useState("");
 
   React.useEffect(() => {
     // set the value of textC, based on textA and textB
     if (touched.date) {
-      console.log("date from my input", date);
+      //   console.log("date from my input", date);
       //   setSelectedDate(date);
-      updateTimes(date);
-      console.log("updateTimes(date)", updateTimes(date));
+      //   updateTimes(date);
+      //   console.log("updateTimes(date)", updateTimes(date));
 
-      setFieldValue(props.name, `date: ${date}`);
+      setFieldValue(props.name, `${date}`);
+      updateTimes(date);
     }
   }, [date, touched.date, setFieldValue, props.name]);
 

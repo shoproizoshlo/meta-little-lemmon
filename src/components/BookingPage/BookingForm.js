@@ -57,8 +57,6 @@ export default function BookingForm(props) {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
-            updateTimes(date);
-            console.log("update times", updateTimes(date));
           }, 400);
         }}
       >
@@ -79,15 +77,24 @@ export default function BookingForm(props) {
             textC
             <MyField name="textC" />
           </label> */}
+          <label>
+            textC
+            <MyField
+              name="date"
+              type="date"
+              value={date}
+              onChange={(e) => handleDateChange(e)}
+            />
+          </label>
 
           <label htmlFor="res-date">Choose date</label>
-          <input
+          {/* <input
             type="date"
             id="res-date"
             name="res-date"
             value={date}
             onChange={(e) => handleDateChange(e)}
-          />
+          /> */}
 
           <MySelect label="Choose time" name="time">
             {finalTime}
