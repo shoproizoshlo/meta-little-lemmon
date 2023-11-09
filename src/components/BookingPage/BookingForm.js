@@ -68,33 +68,39 @@ export default function BookingForm(props) {
         }}
       >
         <Form>
-          <label htmlFor="res-date">Choose date</label>
+          <label htmlFor="date">Choose date</label>
           <MyField
             name="date"
+            id="date"
             type="date"
+            aria-labelledby="date"
             value={date}
             onChange={(e) => handleDateChange(e)}
           />
 
-          <MySelect label="Choose time" name="time">
+          <label htmlFor="time">Choose time</label>
+          <MySelect name="time" id="time" aria-labelledby="time">
             <option value="">Select time</option>
             {finalTime}
           </MySelect>
-
           <label htmlFor="guests">Number of guests</label>
-          <Field name="guests" type="number" min={1} />
+          <Field
+            name="guests"
+            id="guests"
+            aria-labelledby="guests"
+            type="number"
+            min={1}
+          />
           <ErrorMessage name="guests" />
-
-          <MySelect label="Occasion" name="occasion">
+          <label htmlFor="occasion">Occasion</label>
+          <MySelect name="occasion" id="occasion" aria-labelledby="occasion">
             <option value="">Select a occasion</option>
             <option value="birthday">Birthday</option>
             <option value="anniversary">Anniversary</option>
           </MySelect>
-
           <label htmlFor="email">Email Address</label>
-          <Field name="email" type="email" />
+          <Field name="email" id="email" aria-labelledby="email" type="email" />
           <ErrorMessage name="email" />
-
           <button type="submit">Book Now</button>
         </Form>
       </Formik>
