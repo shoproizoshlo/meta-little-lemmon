@@ -1,10 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Formik, Field, Form, useField, useFormikContext } from "formik";
+import { useField, useFormikContext } from "formik";
 
 const MyField = (props) => {
   const {
-    values: { textA, textB, date, time, updateTimes },
+    values: { textA, textB },
     touched,
     setFieldValue,
   } = useFormikContext();
@@ -19,15 +18,6 @@ const MyField = (props) => {
       touched.textB
     ) {
       setFieldValue(props.name, `textA: ${textA}, textB: ${textB}`);
-    }
-    if (date.trim() !== "" && touched.date) {
-      setFieldValue(
-        props.setFinalTime(
-          props.availableTimes.map((times) => (
-            <option key={times}>{times}</option>
-          ))
-        )
-      );
     }
   }, [textB, textA, touched.textA, touched.textB, setFieldValue, props.name]);
 

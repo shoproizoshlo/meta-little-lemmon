@@ -13,17 +13,17 @@ export default function BookingForm(props) {
     props.availableTimes.map((times) => <option key={times}>{times}</option>)
   );
 
-  // function handleDateChange(e) {
-  //   setDate(e.target.value);
+  function handleDateChange(e) {
+    setDate(e.target.value);
 
-  //   const date = new Date(e.target.value);
+    const date = new Date(e.target.value);
 
-  //   props.updateTimes(date);
+    props.updateTimes(date);
 
-  //   setFinalTime(
-  //     props.availableTimes.map((times) => <option key={times}>{times}</option>)
-  //   );
-  // }
+    setFinalTime(
+      props.availableTimes.map((times) => <option key={times}>{times}</option>)
+    );
+  }
 
   return (
     <>
@@ -75,7 +75,12 @@ export default function BookingForm(props) {
           </label>
 
           <label htmlFor="res-date">Choose date</label>
-          <MyField name="date" type="date" />
+          <MyField
+            name="date"
+            type="date"
+            value={date}
+            onChange={(e) => handleDateChange(e)}
+          />
           {/* <input
             type="date"
             id="res-date"
