@@ -37,11 +37,16 @@ export default function BookingForm(props) {
       <Formik
         initialValues={{
           date: "",
+          time: "",
           guests: "",
           occasion: "",
           email: "",
         }}
         validationSchema={Yup.object({
+          date: Yup.date().required("Required"),
+
+          time: Yup.string().required("Required"),
+
           guests: Yup.number()
             .max(1, "Minimum 1 guest please")
             .max(10, "Maximum 10 guests or email us if you want more guests")
@@ -72,9 +77,9 @@ export default function BookingForm(props) {
           />
 
           <MySelect label="Choose time" name="time">
+            <option value="">Select time</option>
             {finalTime}
           </MySelect>
-          <ErrorMessage name="time" />
 
           <label htmlFor="guests">Number of guests</label>
           <Field name="guests" type="number" min={1} />
