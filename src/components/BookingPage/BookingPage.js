@@ -3,12 +3,13 @@ import BookingForm from "./BookingForm";
 import { useReducer } from "react";
 import { fetchAPI } from "../../bookingsAPI";
 
+export function updateTimes(date) {
+  console.log("fetchAPI", date, fetchAPI(date));
+  return fetchAPI(date);
+}
 export default function BookingPage() {
-  function updateTimes(date) {
-    return fetchAPI(date);
-  }
-
   const output = fetchAPI(new Date());
+  console.log("output", output);
 
   const [availableTimes, dispatch] = useReducer(updateTimes, output);
   return (
