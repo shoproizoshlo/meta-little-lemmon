@@ -7,8 +7,6 @@ import MyField from "./MyField";
 import { updateTimes } from "./BookingPage";
 
 export default function BookingForm(props) {
-  const [guests, setGuests] = useState(2);
-  const [occasion, setOccasion] = useState("");
   const [date, setDate] = useState("");
   const [finalTime, setFinalTime] = useState(
     props.availableTimes.map((times) => <option key={times}>{times}</option>)
@@ -24,7 +22,11 @@ export default function BookingForm(props) {
     console.log("update times", updateTimes(date));
 
     setFinalTime(
-      props.availableTimes.map((times) => <option key={times}>{times}</option>)
+      props.availableTimes.map((times) => (
+        <option key={times} value={times}>
+          {times}
+        </option>
+      ))
     );
     console.log("finalTime", finalTime);
   }
@@ -61,40 +63,13 @@ export default function BookingForm(props) {
         }}
       >
         <Form>
-          <label>
-            textA
-            <Field name="textA" />
-          </label>
-          <label>
-            textB
-            <Field name="textB" />
-          </label>
-          {/* <label>
-            date
-            <Field name="date" type="date" />
-          </label>
-          <label>
-            textC
-            <MyField name="textC" />
-          </label> */}
-          <label>
-            textC
-            <MyField
-              name="date"
-              type="date"
-              value={date}
-              onChange={(e) => handleDateChange(e)}
-            />
-          </label>
-
           <label htmlFor="res-date">Choose date</label>
-          {/* <input
+          <MyField
+            name="date"
             type="date"
-            id="res-date"
-            name="res-date"
             value={date}
             onChange={(e) => handleDateChange(e)}
-          /> */}
+          />
 
           <MySelect label="Choose time" name="time">
             {finalTime}
