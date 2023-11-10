@@ -1,14 +1,9 @@
-import axios from "axios";
+import React from "react";
 
-import React, { useState, useContext, useEffect } from "react";
-import { DataContext } from "../../data/DataContext";
-
-const DishCard = ({ dishId, setOrderPopOpen, setDishId, menu }) => {
+const DishCard = ({ dishId, menu }) => {
   const renderDishCard = () => {
     // const dishCard = menu[0];
     const dishCard = menu.find((dish) => dish.id === dishId);
-
-    console.log(dishCard);
 
     return (
       <article>

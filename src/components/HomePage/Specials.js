@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { useContext, useState } from "react";
+import { useState } from "react";
 import React from "react";
 import CallToAction from "../PageComponents/CallToAction";
 import { DataContext } from "../../data/DataContext";
@@ -19,11 +19,11 @@ export default function Specials() {
   return (
     <>
       <article>
-        <section className="menu-positions">
-          <div className="specials">
+        <section>
+          <div>
             <h2>This week specials</h2>
             <CallToAction url="/" callToAction="Online Menu" />
-            <div className="menu-list">
+            <div>
               {menu.slice(0, 3).map((MenuDish) => {
                 if (MenuDish["special"] === "true") {
                   return (
