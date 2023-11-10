@@ -9,6 +9,7 @@ const getData = (type, setType) => {
     .get(`https://little-lemon-restaurant-database.onrender.com/${type}`)
     .then((response) => {
       setType(response.data);
+      console.log(response.data);
     })
     .catch((error) => console.log(error));
 };
@@ -127,5 +128,3 @@ export const SetDataProvider = (props) => {
     </SetDataContext.Provider>
   );
 };
-
-/* to updated data in jason */

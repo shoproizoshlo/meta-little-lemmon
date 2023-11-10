@@ -1,5 +1,6 @@
 import React from "react";
 import TopOfThePage from "../PageComponents/TopOfThePage";
+import Specials from "./Specials";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
         callToAction="Reserve a Table"
       />
       This is a homepage
+      <Specials />
     </>
   );
 }
