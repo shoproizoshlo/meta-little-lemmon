@@ -23,7 +23,7 @@ export default function Specials() {
           <div>
             <h2>This week specials</h2>
             <CallToAction url="/" callToAction="Online Menu" />
-            <div>
+            <div className="d-flex">
               {menu.slice(0, 3).map((MenuDish) => {
                 if (MenuDish["special"] === "true") {
                   return (

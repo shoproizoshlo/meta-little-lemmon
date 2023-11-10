@@ -1,30 +1,25 @@
 import React from "react";
 
 const DishCard = ({ dishId, menu }) => {
-  const renderDishCard = () => {
-    // const dishCard = menu[0];
-    const dishCard = menu.find((dish) => dish.id === dishId);
+  const dishCard = menu.find((dish) => dish.id === dishId);
 
-    return (
-      <article>
-        <img src={dishCard["dish-image"]} alt="dish-image" />
-        <div>
-          <div>
-            <span>{dishCard["dish-name"]}</span>
-            <span>$ {dishCard["dish-price"]}</span>
-          </div>
-          <div>
-            <p>{dishCard["dish-details"]}</p>
-          </div>
+  return (
+    <article className="d-flex flex-column">
+      <img src={dishCard["dish-image"]} alt="dish-image" />
+      <div className="d-flex flex-column">
+        <div className="d-flex ">
+          <p>{dishCard["dish-name"]}</p>
+          <p>$ {dishCard["dish-price"]}</p>
         </div>
         <div>
-          <button>Order a Delivery</button>
+          <p>{dishCard["dish-details"]}</p>
         </div>
-      </article>
-    );
-  };
-
-  return <div>{renderDishCard()}</div>;
+      </div>
+      <div>
+        <button>Order a Delivery</button>
+      </div>
+    </article>
+  );
 };
 
 export default DishCard;
