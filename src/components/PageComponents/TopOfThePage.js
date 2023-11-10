@@ -7,13 +7,9 @@ export default function TopOfThePage(props) {
       <article className="first-screen">
         <div className="heading-section container">
           <div className="heading-info">
-            <h1>Little Lemon</h1>
-            <h2>Chicago</h2>
-            <p>
-              Lille Lemon is a charming neighborhood bistro thatserves simple
-              food and classic cocktails in a lively but casual environment. The
-              restaurant features a locally-sourced menu with daily specials.
-            </p>
+            <h1>{props.h1}</h1>
+            <h2>{props.h2}</h2>
+            <p>{props.text}</p>
             <CallToAction url={props.url} callToAction={props.callToAction} />
           </div>
           <div className="heading-image">
