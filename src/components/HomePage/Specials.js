@@ -24,7 +24,7 @@ export default function Specials() {
             <h2>This week specials</h2>
             <CallToAction url="/" callToAction="Online Menu" />
             <div className="menu-list">
-              {menu.map((MenuDish) => {
+              {menu.slice(0, 3).map((MenuDish) => {
                 if (MenuDish["special"] === "true") {
                   return (
                     <DishCard
