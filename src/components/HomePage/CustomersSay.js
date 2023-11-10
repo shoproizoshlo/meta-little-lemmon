@@ -2,15 +2,14 @@ import axios from "axios";
 
 import { useState } from "react";
 import React from "react";
-import Testimonial from "./Testimonial";
+import TestimonialCard from "./TestimonialCard";
 
 export default function CustomersSay() {
-  const [testimoId, setDishId] = useState();
-  const [testimo, setMenu] = useState([]);
+  const [testimonial, setTestimonial] = useState([]);
   axios
     .get(`https://little-lemon-restaurant-database.onrender.com/testimonials`)
     .then((response) => {
-      setMenu(response.data);
+      setTestimonial(response.data);
     })
     .catch((error) => console.log(error));
 
@@ -18,20 +17,27 @@ export default function CustomersSay() {
     <>
       <article>
         <section>
-          <div>
-            <h2>This week specials</h2>
+          <div className="d-flex flex-column">
             <div className="d-flex">
-              {testimo.map((testimoItem) => {
-                {
-                  return (
-                    <Testimonial
-                      testimo={testimo}
-                      key={testimoItem["name"]}
-                      testimoId={testimoItem["id"]}
-                      setDishId={setDishId}
-                    />
-                  );
-                }
+              {testimonial.slice(0, 2).map((testimonialItem) => {
+                console.log("customers", testimonialItem);
+                return (
+                  <TestimonialCard
+                    testimonialItem={testimonialItem}
+                    key={testimonialItem["name"]}
+                  />
+                );
+              })}
+            </div>
+            <div className="d-flex">
+              {testimonial.slice(2, 5).map((testimonialItem) => {
+                console.log("customers", testimonialItem);
+                return (
+                  <TestimonialCard
+                    testimonialItem={testimonialItem}
+                    key={testimonialItem["name"]}
+                  />
+                );
               })}
             </div>
           </div>
