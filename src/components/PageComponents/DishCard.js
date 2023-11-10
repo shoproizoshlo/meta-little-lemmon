@@ -10,7 +10,8 @@ const DishCard = ({ dishId, setOrderPopOpen, setDishId, menu }) => {
   };
 
   const renderDishCard = () => {
-    const dishCard = menu.map((dish) => dish.id === dishId);
+    const dishCard = menu[0];
+    // const dishCard = menu.map((dish) => dish.id === dishId);
 
     return (
       <article className="DishCard">
