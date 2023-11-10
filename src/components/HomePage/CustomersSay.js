@@ -20,7 +20,6 @@ export default function CustomersSay() {
           <div className="d-flex flex-column">
             <div className="d-flex">
               {testimonial.slice(0, 2).map((testimonialItem) => {
-                console.log("customers", testimonialItem);
                 return (
                   <TestimonialCard
                     testimonialItem={testimonialItem}
