@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import MySelect from "./MySelect";
 import MyField from "./MyField";
 import { updateTimes } from "./BookingPage";
+import CallToAction from "../PageComponents/CallToAction";
 
 export default function BookingForm(props) {
   const [date, setDate] = useState("");
@@ -77,7 +78,6 @@ export default function BookingForm(props) {
             value={date}
             onChange={(e) => handleDateChange(e)}
           />
-
           <label htmlFor="time">Choose time</label>
           <MySelect name="time" id="time" aria-labelledby="time">
             <option value="">Select time</option>
