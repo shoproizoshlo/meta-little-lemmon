@@ -7,14 +7,12 @@ import { DataContext } from "../../data/DataContext";
 import DishCard from "../PageComponents/DishCard";
 
 export default function Specials() {
-  const [isOrderPopOpen, setOrderPopOpen] = useState(false);
   const [dishId, setDishId] = useState();
   const [menu, setMenu] = useState([]);
   axios
     .get(`https://little-lemon-restaurant-database.onrender.com/menu`)
     .then((response) => {
       setMenu(response.data);
-      console.log(response.data);
     })
     .catch((error) => console.log(error));
 
@@ -31,9 +29,8 @@ export default function Specials() {
                   return (
                     <DishCard
                       menu={menu}
-                      key={MenuDish["id"]}
+                      key={MenuDish["dish-name"]}
                       dishId={MenuDish["id"]}
-                      setOrderPopOpen={setOrderPopOpen}
                       setDishId={setDishId}
                     />
                   );
