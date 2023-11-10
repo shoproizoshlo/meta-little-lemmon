@@ -3,8 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import React from "react";
 import CallToAction from "../PageComponents/CallToAction";
-import { DataContext } from "../../data/DataContext";
-import DishCard from "../PageComponents/DishCard";
+import DishCard from "./DishCard";
 
 export default function Specials() {
   const [dishId, setDishId] = useState();

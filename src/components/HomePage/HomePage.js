@@ -1,6 +1,7 @@
 import React from "react";
 import TopOfThePage from "../PageComponents/TopOfThePage";
 import Specials from "./Specials";
+import CustomersSay from "./CustomersSay";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       />
       This is a homepage
       <Specials />
+      <CustomersSay />
     </>
   );
 }
