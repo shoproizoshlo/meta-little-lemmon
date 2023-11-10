@@ -1,5 +1,11 @@
 import React from "react";
+import TopOfThePage from "../PageComponents/TopOfThePage";
 
 export default function HomePage() {
-  return <>This is a homepage</>;
+  return (
+    <>
+      <TopOfThePage />
+      This is a homepage
+    </>
+  );
 }
