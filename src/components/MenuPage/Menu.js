@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import SpecialsMenu from "./SpecialsMenu";
 
 export default function Menu() {
@@ -7,25 +8,33 @@ export default function Menu() {
     <>
       <ul className="d-md-flex">
         <li>
-          <Link to="/menu/specials">Specials</Link>
+          <HashLink smooth to={"/menu#specials"}>
+            Specials
+          </HashLink>
         </li>
         <li>
-          <Link to="/menu/entrees">Entrees</Link>
+          <HashLink smooth to={"/menu#entrees"}>
+            Entrees
+          </HashLink>
         </li>
         <li>
-          <Link to="/menu/appetizers">Appetizers</Link>
+          <HashLink smooth to={"/menu#appetizers"}>
+            Appetizers
+          </HashLink>
         </li>
         <li>
-          <Link to="/menu/desserts">Desserts</Link>
+          <HashLink smooth to={"/menu#desserts"}>
+            Desserts
+          </HashLink>
         </li>
       </ul>
-      <p>Specials</p>
+      <p id="special">Specials</p>
       <SpecialsMenu special="special" />
-      <p>Entrees</p>
+      <p id="entrees">Entrees</p>
       <SpecialsMenu category="Entrees" />
-      <p>Appetizers</p>
+      <p id="appetizers">Appetizers</p>
       <SpecialsMenu category="Appetizers" />
-      <p>Desserts</p>
+      <p id="desserts">Desserts</p>
       <SpecialsMenu category="Desserts" />
     </>
   );

@@ -17,22 +17,6 @@ export default function Main() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/menu" element={<MenuPage />} />
-          <Route
-            path="/menu/specials"
-            element={<SpecialsMenu special="special" />}
-          />
-          <Route
-            path="/menu/entrees"
-            element={<SpecialsMenu category="Entrees" />}
-          />
-          <Route
-            path="/menu/appetizers"
-            element={<SpecialsMenu category="Appetizers" />}
-          />
-          <Route
-            path="/menu/desserts"
-            element={<SpecialsMenu category="Desserts" />}
-          />
           <Route path="/booking-submit" element={<ThankYouPage />} />
         </Routes>
       </main>
