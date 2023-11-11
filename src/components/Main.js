@@ -11,7 +11,6 @@ export default function Main() {
   return (
     <>
       <main className="container d-md-flex flex-column">
-        <p>Main</p>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
