@@ -4,7 +4,14 @@ import SpecialsMenu from "./SpecialsMenu";
 export default function Menu() {
   return (
     <>
-      <SpecialsMenu />
+      <p>Specials</p>
+      <SpecialsMenu special="special" />
+      <p>Entrees</p>
+      <SpecialsMenu category="Entrees" />
+      <p>Appetizers</p>
+      <SpecialsMenu category="Appetizers" />
+      <p>Desserts</p>
+      <SpecialsMenu category="Desserts" />
     </>
   );
 }

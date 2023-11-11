@@ -10,7 +10,7 @@ export default function Specials() {
           <div>
             <h2>This week specials</h2>
             <CallToAction url="/" callToAction="Online Menu" />
-            <SpecialsMenu displayCount={3} />
+            <SpecialsMenu displayCount={3} special="special" />
           </div>
         </section>
       </article>

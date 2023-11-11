@@ -21,7 +21,17 @@ export default function SpecialsMenu(props) {
           <div>
             <div className="row">
               {menu.slice(0, props.displayCount).map((MenuDish) => {
-                if (MenuDish["special"] === "true") {
+                if (MenuDish[props.special] === "true") {
+                  return (
+                    <div key={MenuDish["dish-name"]} className="col-3">
+                      <DishCard
+                        menu={menu}
+                        dishId={MenuDish["id"]}
+                        setDishId={setDishId}
+                      />
+                    </div>
+                  );
+                } else if (MenuDish["category"] === props.category) {
                   return (
                     <div key={MenuDish["dish-name"]} className="col-3">
                       <DishCard
