@@ -7,23 +7,30 @@ import About from "../AboutPage/About";
 export default function HomePage() {
   return (
     <>
-      <TopOfThePage
-        h1="Little Lemon"
-        h2="Chicago"
-        text="Lille Lemon is a charming neighborhood bistro thatserves simple
+      <div className="mb-5">
+        <TopOfThePage
+          h1="Little Lemon"
+          h2="Chicago"
+          text="Lille Lemon is a charming neighborhood bistro thatserves simple
               food and classic cocktails in a lively but casual environment. The
               restaurant features a locally-sourced menu with daily specials."
-        url="/booking"
-        callToAction="Reserve a Table"
-        topPhoto="/"
-      />
-      This is a homepage
-      <Specials />
-      <CustomersSay />
-      <About
-        description="Little Lemon Restaurant in Chicago: A citrus-infused culinary haven. Savor a unique blend of zesty flavors in every dish, from appetizers to desserts. Experience a refreshing twist on classic favorites. Your taste buds will thank you!"
-        topPhoto="/"
-      />
+          url="/booking"
+          callToAction="Reserve a Table"
+          topPhoto="/"
+        />
+      </div>
+      <div className="mb-5">
+        <Specials />
+      </div>
+      <div className="mb-5">
+        <CustomersSay />
+      </div>
+      <div>
+        <About
+          description="Little Lemon Restaurant in Chicago: A citrus-infused culinary haven. Savor a unique blend of zesty flavors in every dish, from appetizers to desserts. Experience a refreshing twist on classic favorites. Your taste buds will thank you!"
+          topPhoto="/"
+        />
+      </div>
     </>
   );
 }
