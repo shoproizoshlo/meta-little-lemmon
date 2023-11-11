@@ -5,8 +5,12 @@ import Menu from "./Menu";
 export default function MenuPage() {
   return (
     <>
-      <TopOfThePage h1="Menu" h2="Find our amazing dishes" topPhoto="/" />
-      <Menu />
+      <div>
+        <TopOfThePage h1="Menu" h2="Find our amazing dishes" topPhoto="/" />
+      </div>
+      <div className="container">
+        <Menu />
+      </div>
     </>
   );
 }

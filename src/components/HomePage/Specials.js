@@ -5,7 +5,7 @@ import SpecialsMenu from "../MenuPage/SpecialsMenu";
 export default function Specials() {
   return (
     <>
-      <article>
+      <article className="container">
         <section>
           <div>
             <h2>This week specials</h2>

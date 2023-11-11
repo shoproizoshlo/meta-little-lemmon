@@ -16,9 +16,6 @@ const DishCard = ({ dishId, menu }) => {
             <p>{specialsCard["dish-details"]}</p>
           </div>
         </div>
-        <div>
-          <button>Order a Delivery</button>
-        </div>
       </article>
     </>
   );

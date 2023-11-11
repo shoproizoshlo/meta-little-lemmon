@@ -10,7 +10,7 @@ import SpecialsMenu from "./MenuPage/SpecialsMenu";
 export default function Main() {
   return (
     <>
-      <main className="container d-md-flex flex-column">
+      <main className="d-md-flex flex-column">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

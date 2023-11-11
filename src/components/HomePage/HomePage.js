@@ -7,7 +7,7 @@ import About from "../AboutPage/About";
 export default function HomePage() {
   return (
     <>
-      <div className="mb-5">
+      <div>
         <TopOfThePage
           h1="Little Lemon"
           h2="Chicago"
@@ -19,10 +19,10 @@ export default function HomePage() {
           topPhoto="/"
         />
       </div>
-      <div className="mb-5">
+      <div>
         <Specials />
       </div>
-      <div className="mb-5">
+      <div>
         <CustomersSay />
       </div>
       <div>

@@ -15,7 +15,7 @@ export default function CustomersSay() {
 
   return (
     <>
-      <article>
+      <article className="container">
         <section>
           <div className="row">
             {testimonial.map((testimonialItem) => {

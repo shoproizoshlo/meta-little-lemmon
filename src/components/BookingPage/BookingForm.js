@@ -34,7 +34,6 @@ export default function BookingForm(props) {
 
   return (
     <>
-      <p>This is BookingForm</p>
       <Formik
         initialValues={{
           date: "",

@@ -1,11 +1,12 @@
 import React from "react";
 import CallToAction from "./CallToAction";
+import "./TopOfThePage.css";
 
 export default function TopOfThePage(props) {
   return (
     <>
-      <article>
-        <div className="d-flex">
+      <article className="top-of-page">
+        <div className="container d-flex">
           <div>
             <h1>{props.h1}</h1>
             <h2>{props.h2}</h2>

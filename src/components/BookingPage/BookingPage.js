@@ -1,5 +1,6 @@
 import React from "react";
 import BookingForm from "./BookingForm";
+import TopOfThePage from "../PageComponents/TopOfThePage";
 import { useReducer } from "react";
 import { fetchAPI } from "../../bookingsAPI";
 
@@ -14,8 +15,12 @@ export default function BookingPage() {
   const [availableTimes, dispatch] = useReducer(updateTimes, output);
   return (
     <>
-      <p>This is booking page</p>
-      <BookingForm availableTimes={availableTimes} updateTimes={dispatch} />
+      <div>
+        <TopOfThePage h1="Reserve a table" topPhoto="/" />
+      </div>
+      <div className="container">
+        <BookingForm availableTimes={availableTimes} updateTimes={dispatch} />
+      </div>
     </>
   );
 }

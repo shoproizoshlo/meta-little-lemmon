@@ -28,14 +28,22 @@ export default function Menu() {
           </HashLink>
         </li>
       </ul>
-      <p id="special">Specials</p>
-      <SpecialsMenu special="special" />
-      <p id="entrees">Entrees</p>
-      <SpecialsMenu category="Entrees" />
-      <p id="appetizers">Appetizers</p>
-      <SpecialsMenu category="Appetizers" />
-      <p id="desserts">Desserts</p>
-      <SpecialsMenu category="Desserts" />
+      <div className="mb-5">
+        <p id="special">Specials</p>
+        <SpecialsMenu special="special" />
+      </div>
+      <div className="mb-5">
+        <p id="entrees">Entrees</p>
+        <SpecialsMenu category="Entrees" />
+      </div>
+      <div className="mb-5">
+        <p id="appetizers">Appetizers</p>
+        <SpecialsMenu category="Appetizers" />
+      </div>
+      <div className="mb-5">
+        <p id="desserts">Desserts</p>
+        <SpecialsMenu category="Desserts" />
+      </div>
     </>
   );
 }
