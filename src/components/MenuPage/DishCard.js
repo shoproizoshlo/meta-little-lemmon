@@ -1,6 +1,6 @@
 import React from "react";
 
-const SpecialsCard = ({ dishId, menu }) => {
+const DishCard = ({ dishId, menu }) => {
   const specialsCard = menu.find((dish) => dish.id === dishId);
 
   return (
@@ -24,4 +24,4 @@ const SpecialsCard = ({ dishId, menu }) => {
   );
 };
 
-export default SpecialsCard;
+export default DishCard;

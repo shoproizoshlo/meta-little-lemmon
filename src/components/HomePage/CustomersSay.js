@@ -17,28 +17,17 @@ export default function CustomersSay() {
     <>
       <article>
         <section>
-          <div className="d-flex flex-column">
-            <div className="d-flex">
-              {testimonial.slice(0, 2).map((testimonialItem) => {
-                return (
+          <div className="row">
+            {testimonial.map((testimonialItem) => {
+              return (
+                <div key={testimonialItem["name"]} className="col-4">
                   <TestimonialCard
                     testimonialItem={testimonialItem}
                     key={testimonialItem["name"]}
                   />
-                );
-              })}
-            </div>
-            <div className="d-flex">
-              {testimonial.slice(2, 5).map((testimonialItem) => {
-                console.log("customers", testimonialItem);
-                return (
-                  <TestimonialCard
-                    testimonialItem={testimonialItem}
-                    key={testimonialItem["name"]}
-                  />
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </article>

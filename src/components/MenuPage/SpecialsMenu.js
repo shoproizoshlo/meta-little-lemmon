@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { useState } from "react";
 import React from "react";
-import SpecialsCard from "./SpecialsCard";
+import SpecialsCard from "./DishCard";
 
 export default function SpecialsMenu(props) {
   const [dishId, setDishId] = useState();
