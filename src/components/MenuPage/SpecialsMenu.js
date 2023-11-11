@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { useState } from "react";
 import React from "react";
-import SpecialsCard from "./DishCard";
+import DishCard from "./DishCard";
 
 export default function SpecialsMenu(props) {
   const [dishId, setDishId] = useState();
@@ -24,7 +24,7 @@ export default function SpecialsMenu(props) {
                 if (MenuDish["special"] === "true") {
                   return (
                     <div key={MenuDish["dish-name"]} className="col-3">
-                      <SpecialsCard
+                      <DishCard
                         menu={menu}
                         dishId={MenuDish["id"]}
                         setDishId={setDishId}
