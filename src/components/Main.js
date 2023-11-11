@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
+import AboutPage from "./AboutPage/AboutPage";
 import BookingPage from "./BookingPage/BookingPage";
 import ThankYouPage from "./PageComponents/ThankYouPage";
 
@@ -11,6 +12,7 @@ export default function Main() {
         <p>Main</p>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/booking-submit" element={<ThankYouPage />} />
         </Routes>
