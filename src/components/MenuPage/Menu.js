@@ -1,10 +1,10 @@
 import React from "react";
-import Specials from "../HomePage/Specials";
+import SpecialsMenu from "./SpecialsMenu";
 
 export default function Menu() {
   return (
     <>
-      <Specials />
+      <SpecialsMenu />
     </>
   );
 }

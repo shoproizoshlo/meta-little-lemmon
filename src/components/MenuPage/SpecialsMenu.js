@@ -2,10 +2,9 @@ import axios from "axios";
 
 import { useState } from "react";
 import React from "react";
-import CallToAction from "../PageComponents/CallToAction";
-import DishCard from "./SpecialsCard";
+import SpecialsCard from "./SpecialsCard";
 
-export default function Specials() {
+export default function SpecialsMenu(props) {
   const [dishId, setDishId] = useState();
   const [menu, setMenu] = useState([]);
   axios
@@ -20,20 +19,20 @@ export default function Specials() {
       <article>
         <section>
           <div>
-            <h2>This week specials</h2>
-            <CallToAction url="/" callToAction="Online Menu" />
-            <div className="d-flex">
-              {menu.slice(0, 3).map((MenuDish) => {
+            <div className="row">
+              {menu.slice(0, props.displayCount).map((MenuDish) => {
                 if (MenuDish["special"] === "true") {
                   return (
-                    <DishCard
-                      menu={menu}
-                      key={MenuDish["dish-name"]}
-                      dishId={MenuDish["id"]}
-                      setDishId={setDishId}
-                    />
+                    <div key={MenuDish["dish-name"]} className="col-3">
+                      <SpecialsCard
+                        menu={menu}
+                        dishId={MenuDish["id"]}
+                        setDishId={setDishId}
+                      />
+                    </div>
                   );
                 }
+                return null;
               })}
             </div>
           </div>
