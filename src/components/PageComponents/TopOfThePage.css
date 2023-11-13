@@ -25,3 +25,11 @@
   top: 0;
   left: 0;
 }
+/* --- */
+
+@media screen and (max-width: 767px) {
+  .heading-image {
+    flex: 0 0 37%;
+    height: 250px;
+  }
+}
