@@ -19,11 +19,11 @@ export default function SpecialsMenu(props) {
       <article>
         <section>
           <div>
-            <div className="row">
+            <div className="d-md-flex justify-content-between">
               {menu.slice(0, props.displayCount).map((MenuDish) => {
                 if (MenuDish[props.special] === "true") {
                   return (
-                    <div key={MenuDish["dish-name"]} className="col-3 mb-3">
+                    <div key={MenuDish["dish-name"]} className="m-3">
                       <DishCard
                         menu={menu}
                         dishId={MenuDish["id"]}

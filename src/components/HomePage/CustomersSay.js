@@ -17,10 +17,13 @@ export default function CustomersSay() {
     <>
       <article className="container">
         <section>
-          <div className="row">
+          <div className="d-md-flex justify-content-between">
             {testimonial.map((testimonialItem) => {
               return (
-                <div key={testimonialItem["name"]} className="col-4">
+                <div
+                  key={testimonialItem["name"]}
+                  className="d-flex flex-column"
+                >
                   <TestimonialCard
                     testimonialItem={testimonialItem}
                     key={testimonialItem["name"]}

@@ -87,6 +87,7 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
   font-family: "Markazi Text", serif;
+  font-weight: 500;
 }
 /*--------------------*/
 /*Setting to zero*/
@@ -115,6 +116,7 @@ h6 {
   flex-direction: column;
   height: 100%;
   font-family: "Karla", sans-serif;
+  font-weight: 400;
   /* max-width: 65ch; */
   font-size: 16px;
   line-height: 24px;
@@ -126,6 +128,23 @@ main {
 
 h1 {
   font-size: 40px;
+  line-height: 60px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 27px;
+}
+.titel {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+}
+.highlight {
+  font-weight: 500;
 }
 
 a {
@@ -138,12 +157,6 @@ a:active {
   color: var(--primary-green);
 }
 
-.cta {
-  font-size: 18px;
-}
-.card-title {
-  font-size: 18px;
-}
 /* page container */
 .container {
   max-width: 1145px;

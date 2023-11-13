@@ -4,9 +4,9 @@ const TestimonialCard = ({ testimonialItem }) => {
   return (
     <>
       <article className="d-flex flex-column">
-        <div className="d-flex ">
+        <div className="d-flex">
           <img src={testimonialItem["image"]} alt="dish-image" />
-          <p>{testimonialItem["name"]}</p>
+          <p className="highlight">{testimonialItem["name"]}</p>
         </div>
         <p>{testimonialItem["rating"]}</p>
         <p>{testimonialItem["review"]}</p>
