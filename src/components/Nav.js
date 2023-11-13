@@ -15,7 +15,7 @@ export default function Nav() {
   }
   return (
     <>
-      <nav className="container">
+      <nav className="nav-container">
         <div id="menu-icon">
           <img onClick={teste} src={HamburgerIcon} alt="hamburger icon" />
         </div>

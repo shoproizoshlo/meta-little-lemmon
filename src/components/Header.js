@@ -6,7 +6,7 @@ import Logo from "../images/Logo.svg";
 export default function Header() {
   return (
     <>
-      <header className="container d-md-flex justify-content-center align-items-center">
+      <header className="container d-flex justify-content-center align-items-center">
         <img src={Logo} alt="logo" />
         <Nav />
       </header>
