@@ -3,7 +3,7 @@ import React from "react";
 export default function FooterContact() {
   return (
     <div className="contact-links">
-      <h6>Contact</h6>
+      <p className="titel">Contact</p>
       <ul>
         <li>
           <span itemScope itemType="http://schema.org/PostalAddress">

@@ -26,7 +26,7 @@ export default function SocialMediaLinks() {
   ];
   return (
     <div className="social-links">
-      <h6>Socials</h6>
+      <p className="titel">Socials</p>
       <LinksList data={socialLinks} />
     </div>
   );
