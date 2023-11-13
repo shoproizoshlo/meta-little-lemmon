@@ -22,10 +22,7 @@ export default function CustomersSay(props) {
               .slice(props.displayCountMin, props.displayCountMax)
               .map((testimonialItem) => {
                 return (
-                  <div
-                    key={testimonialItem["name"]}
-                    className="d-flex flex-column"
-                  >
+                  <div key={testimonialItem["name"]} className="d-flex">
                     <TestimonialCard
                       testimonialItem={testimonialItem}
                       key={testimonialItem["name"]}
