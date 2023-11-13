@@ -1,0 +1,26 @@
+.testimonials {
+  margin-bottom: 40px;
+}
+.testimonials:last-child {
+  margin-bottom: 0;
+}
+
+.testimonial {
+  flex: 1;
+  margin-right: 40px;
+  padding: 20px;
+  overflow: hidden;
+  border: 2px solid var(--primary-green);
+  border-radius: 20px;
+}
+.testimonial:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .testimonial {
+    margin-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}

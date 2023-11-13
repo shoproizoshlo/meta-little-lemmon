@@ -1,0 +1,9 @@
+.customers-say {
+  margin-top: 7%;
+}
+
+@media screen and (max-width: 767px) {
+  .customers-say {
+    margin-top: 150px;
+  }
+}

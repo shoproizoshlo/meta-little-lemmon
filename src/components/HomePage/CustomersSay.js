@@ -1,38 +1,15 @@
-import axios from "axios";
-
-import { useState } from "react";
 import React from "react";
-import TestimonialCard from "./TestimonialCard";
+import Testimonials from "./Testimonials";
+import "./CustomersSay.css";
 
-export default function CustomersSay(props) {
-  const [testimonial, setTestimonial] = useState([]);
-  axios
-    .get(`https://little-lemon-restaurant-database.onrender.com/testimonials`)
-    .then((response) => {
-      setTestimonial(response.data);
-    })
-    .catch((error) => console.log(error));
-
+export default function CustomersSay() {
   return (
-    <>
-      <article className="container">
-        <section>
-          <div className="d-md-flex justify-content-between">
-            {testimonial
-              .slice(props.displayCountMin, props.displayCountMax)
-              .map((testimonialItem) => {
-                return (
-                  <div key={testimonialItem["name"]} className="d-flex">
-                    <TestimonialCard
-                      testimonialItem={testimonialItem}
-                      key={testimonialItem["name"]}
-                    />
-                  </div>
-                );
-              })}
-          </div>
-        </section>
-      </article>
-    </>
+    <div className="container customers-say">
+      <div className="d-flex justify-content-center mb-5">
+        <h2>Customers say</h2>
+      </div>
+      <Testimonials displayCountMin={0} displayCountMax={2} />
+      <Testimonials displayCountMin={2} displayCountMax={4} />
+    </div>
   );
 }
