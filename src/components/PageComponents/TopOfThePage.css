@@ -1,4 +1,23 @@
 .top-of-page {
-  /* height: 400px; */
+  height: 400px;
   background-color: var(--primary-green);
+}
+
+/* for responsive images */
+.heading-image {
+  flex: 0 0 37%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+}
+
+.heading-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -6,14 +6,14 @@ export default function TopOfThePage(props) {
   return (
     <>
       <article className="top-of-page">
-        <div className="container d-flex justify-content-between">
+        <div className="container d-md-flex justify-content-between">
           <div>
             <h1>{props.h1}</h1>
             <h2>{props.h2}</h2>
             <p>{props.text}</p>
             <CallToAction url={props.url} callToAction={props.callToAction} />
           </div>
-          <div>
+          <div className="heading-image">
             <img src={props.topPhoto} alt="restauran food" />
           </div>
         </div>
