@@ -1,8 +1,8 @@
 import axios from "axios";
-
 import { useState } from "react";
 import React from "react";
 import DishCard from "./DishCard";
+import "./SpecialsMenu.css";
 
 export default function SpecialsMenu(props) {
   const [dishId, setDishId] = useState();
@@ -23,7 +23,10 @@ export default function SpecialsMenu(props) {
               {menu.slice(0, props.displayCount).map((MenuDish) => {
                 if (MenuDish[props.special] === "true") {
                   return (
-                    <div key={MenuDish["dish-name"]} className="m-3">
+                    <div
+                      key={MenuDish["dish-name"]}
+                      className="menu-position-item"
+                    >
                       <DishCard
                         menu={menu}
                         dishId={MenuDish["id"]}

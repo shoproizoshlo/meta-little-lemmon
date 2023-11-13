@@ -1,0 +1,27 @@
+/* for responsive images */
+.dish-image {
+  flex: 0 0 33.3333%;
+  min-height: 225px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dish-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* --- */
+
+.dish-description {
+  padding: 30px;
+  text-align: justify;
+}
+
+.dish-description > div:first-child p:nth-child(2) {
+  color: var(--secondary-peach);
+}
