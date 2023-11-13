@@ -5,7 +5,6 @@ import * as Yup from "yup";
 import MySelect from "./MySelect";
 import MyField from "./MyField";
 import { updateTimes } from "./BookingPage";
-import CallToAction from "../PageComponents/CallToAction";
 
 export default function BookingForm(props) {
   const [date, setDate] = useState("");

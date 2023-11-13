@@ -6,7 +6,7 @@ const DishCard = ({ dishId, menu }) => {
   return (
     <>
       <article className="d-flex flex-column">
-        <img src={specialsCard["dish-image"]} alt="dish-image" />
+        <img src={specialsCard["dish-image"]} alt="dish" />
         <div className="d-flex flex-column">
           <div className="d-flex align-items-center justify-content-between">
             <p className="titel">{specialsCard["dish-name"]}</p>

@@ -5,7 +5,6 @@ import AboutPage from "./AboutPage/AboutPage";
 import BookingPage from "./BookingPage/BookingPage";
 import MenuPage from "./MenuPage/MenuPage";
 import ThankYouPage from "./PageComponents/ThankYouPage";
-import SpecialsMenu from "./MenuPage/SpecialsMenu";
 
 export default function Main() {
   return (

@@ -5,7 +5,7 @@ const TestimonialCard = ({ testimonialItem }) => {
     <>
       <article className="d-flex flex-column m-3">
         <div className="d-flex">
-          <img src={testimonialItem["image"]} alt="dish-image" />
+          <img src={testimonialItem["image"]} alt="dish" />
           <p className="highlight">{testimonialItem["name"]}</p>
         </div>
         <div>
