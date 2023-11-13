@@ -8,24 +8,26 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <>
-      <footer className="container mb-3">
-        <div className=" d-md-flex justify-content-between mb-5">
-          <div className="d-flex align-items-center">
-            <img src={Logo} alt="logo" />
+      <footer>
+        <div className="container">
+          <div className="d-md-flex justify-content-between mb-5">
+            <div className="d-flex justify-content-center align-items-start">
+              <img src={Logo} alt="logo" />
+            </div>
+            <div>
+              <Nav />
+            </div>
+            <div>
+              <FooterContact />
+            </div>
+            <div>
+              <SocialMediaLinks />
+            </div>
           </div>
-          <div>
-            <Nav />
+          <div className="d-flex flex-column align-items-center">
+            This is final project for Meta Front-End certification. Created by
+            Sue Brechko. See you on GitHub 🫶🏻
           </div>
-          <div>
-            <FooterContact />
-          </div>
-          <div>
-            <SocialMediaLinks />
-          </div>
-        </div>
-        <div className="d-flex flex-column align-items-center">
-          This is final project for Meta Front-End certification. Created by Sue
-          Brechko. See you on GitHub 🫶🏻
         </div>
       </footer>
     </>

@@ -1,5 +1,6 @@
 import React from "react";
 import LinksList from "../PageComponents/LinksList";
+import "./SocialMediaLinks.css";
 
 export default function SocialMediaLinks() {
   const socialLinks = [

@@ -8,7 +8,7 @@ const TestimonialCard = ({ testimonialItem }) => {
           className="d-flex justify-content-md-start justify-content-sm-center
 "
         >
-          <img src={testimonialItem["image"]} alt="user photo" />
+          <img src={testimonialItem["image"]} alt="user" />
           <p className="highlight ms-4">{testimonialItem["name"]}</p>
         </div>
         <div>
