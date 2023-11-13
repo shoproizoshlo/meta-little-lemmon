@@ -6,6 +6,7 @@ import Logo from "../images/Logo.svg";
 export default function Header() {
   return (
     <>
+      <div className="overlay"></div>
       <header className="container d-flex justify-content-between justify-content-md-center align-items-center">
         <img src={Logo} alt="logo" />
         <Nav />
