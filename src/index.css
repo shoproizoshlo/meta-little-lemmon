@@ -1,5 +1,6 @@
 :root {
   --primary-green: #495e57;
+  --secondary-green: #acbcb7;
   --primary-yellow: #f4ce14;
   --secondary-peach: #ee9972;
   --secondary-peach-light: #fbdabb;
@@ -133,6 +134,7 @@ h1 {
 h2 {
   font-size: 36px;
   line-height: 54px;
+  color: var(--primary-green);
 }
 h3 {
   font-size: 18px;

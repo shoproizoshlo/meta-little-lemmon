@@ -1,5 +1,7 @@
 footer {
   margin-top: 1%;
+  padding: 20px;
+  background-color: var(--secondary-green);
 }
 
 footer nav ul {
