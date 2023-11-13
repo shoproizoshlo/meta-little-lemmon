@@ -27,6 +27,7 @@ export default function HomePage() {
       </div>
       <div>
         <About
+          h2="About us"
           description="Little Lemon Restaurant in Chicago: A citrus-infused culinary haven. Savor a unique blend of zesty flavors in every dish, from appetizers to desserts. Experience a refreshing twist on classic favorites. Your taste buds will thank you!"
           topPhoto="/"
         />
