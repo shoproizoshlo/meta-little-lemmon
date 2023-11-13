@@ -4,7 +4,7 @@ import { useState } from "react";
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
 
-export default function CustomersSay() {
+export default function CustomersSay(props) {
   const [testimonial, setTestimonial] = useState([]);
   axios
     .get(`https://little-lemon-restaurant-database.onrender.com/testimonials`)
@@ -18,19 +18,21 @@ export default function CustomersSay() {
       <article className="container">
         <section>
           <div className="d-md-flex justify-content-between">
-            {testimonial.map((testimonialItem) => {
-              return (
-                <div
-                  key={testimonialItem["name"]}
-                  className="d-flex flex-column"
-                >
-                  <TestimonialCard
-                    testimonialItem={testimonialItem}
+            {testimonial
+              .slice(props.displayCountMin, props.displayCountMax)
+              .map((testimonialItem) => {
+                return (
+                  <div
                     key={testimonialItem["name"]}
-                  />
-                </div>
-              );
-            })}
+                    className="d-flex flex-column"
+                  >
+                    <TestimonialCard
+                      testimonialItem={testimonialItem}
+                      key={testimonialItem["name"]}
+                    />
+                  </div>
+                );
+              })}
           </div>
         </section>
       </article>

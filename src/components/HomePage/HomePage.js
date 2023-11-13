@@ -23,7 +23,8 @@ export default function HomePage() {
         <Specials />
       </div>
       <div>
-        <CustomersSay />
+        <CustomersSay displayCountMin={0} displayCountMax={2} />
+        <CustomersSay displayCountMin={2} displayCountMax={4} />
       </div>
       <div>
         <About
