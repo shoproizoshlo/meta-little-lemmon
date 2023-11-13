@@ -7,11 +7,11 @@ export default function Specials() {
     <>
       <article className="container">
         <section>
-          <div>
+          <div className="d-md-flex justify-content-between mb-5">
             <h2>This week specials</h2>
             <CallToAction url="/" callToAction="Online Menu" />
-            <SpecialsMenu displayCount={3} special="special" />
           </div>
+          <SpecialsMenu displayCount={3} special="special" />
         </section>
       </article>
     </>

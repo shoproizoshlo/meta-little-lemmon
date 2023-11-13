@@ -1,0 +1,21 @@
+.yellow-button {
+  padding: 10px 20px;
+  font-family: "Markazi Text", serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--highlight-dark);
+  border-radius: 10px;
+  background-color: var(--primary-yellow);
+}
+.yellow-button a {
+  color: var(--highlight-dark);
+  transition: all 0.5s ease;
+}
+.yellow-button a:visited {
+  color: var(--highlight-dark);
+}
+.yellow-button a:hover,
+.yellow-button a:active {
+  cursor: pointer;
+  color: var(--primary-green);
+}
