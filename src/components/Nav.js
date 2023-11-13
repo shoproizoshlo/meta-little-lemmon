@@ -1,12 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HamburgerIcon from "../images/icon-hamburger.svg";
 import "./Nav.css";
 
 export default function Nav() {
+  function teste() {
+    const menu = document.getElementById("menu");
+
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
   return (
     <>
-      <nav>
-        <ul className="d-md-flex">
+      <nav className="container">
+        <div id="menu-icon">
+          <img onClick={teste} src={HamburgerIcon} alt="hamburger icon" />
+        </div>
+        <ul className="nav-menu" id="menu">
           <li>
             <Link to="/">Home</Link>
           </li>

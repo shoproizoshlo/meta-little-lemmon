@@ -1,4 +1,47 @@
-nav ul {
+/* navbar */
+#menu-icon {
+  display: none;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+
+nav .container {
+  margin: 2% auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  padding: 0;
+  margin: 0;
+}
+.nav-menu li {
+  display: inline-block;
+  margin-left: 50px;
+}
+.nav-menu li:last-child {
+  padding: 20px 30px;
+  border-radius: 50px;
+  transition: all 0.5 ease;
+}
+.nav-menu li:last-child:hover,
+.nav-menu li:last-child:active {
+  cursor: pointer;
+}
+.nav-menu li:last-child:hover a,
+.nav-menu li:last-child:active a {
+}
+
+.nav-menu a {
+  text-decoration: none;
+  transition: all 0.5 ease;
+}
+/* nav ul {
   display: flex;
   flex-direction: row;
   font-family: "Markazi Text", serif;
@@ -9,15 +52,48 @@ nav ul li {
   margin-left: 20px;
   list-style: none;
   text-transform: uppercase;
-}
+} */
 
 @media screen and (max-width: 767px) {
-  nav ul {
+  /* navbar */
+  body .lock {
+    overflow: hidden;
+  }
+
+  #menu-icon {
+    z-index: 4;
+    display: block;
+  }
+
+  .nav-menu {
+    margin: 0 3%;
+    padding: 2rem;
+    display: none;
+    width: 92%;
+    height: auto;
+    position: absolute;
+    right: 1%;
+    top: 150%;
+    text-align: center;
+    z-index: 3;
+  }
+  .nav-menu li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .nav-menu li:last-child {
+    margin: 0 auto;
+    width: 150px;
+  }
+
+  /* nav ul {
     display: flex;
     flex-direction: column;
   }
   nav ul li {
     margin-left: 0;
     margin-top: 20px;
-  }
+  } */
 }
