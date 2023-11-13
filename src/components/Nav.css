@@ -2,65 +2,104 @@
 #menu-icon {
   display: none;
 }
-
-/* .nav-container {
-  margin: 2% auto;
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
+header {
+  padding: 2rem 0;
+  position: relative;
+}
+header .container {
+  padding: 0 3%;
+  max-width: 1500px;
+  justify-content: start;
   align-items: center;
-} */
-.nav-menu {
-  /* padding: 0;
-  margin: 0; */
+}
+header .nav-menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  font-family: "Markazi Text", serif;
-  font-size: 18px;
-  line-height: 27px;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav-menu li {
+header li {
   display: inline-block;
-  margin-left: 20px;
-  list-style: none;
-  text-transform: uppercase;
+  margin-left: 4rem;
+}
+.login li:last-child {
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 15px 20px;
+  transition: all 0.5s ease;
+}
+.login li:last-child:active,
+.login li:last-child:hover {
+  border: 1px solid black;
+}
+header a {
+  color: gray;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+header a:hover,
+header a:active {
+  cursor: pointer;
+  color: black;
+}
+.open {
+  max-height: 250px;
+  transition: max-height 0.1s ease;
+}
+.closing {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
+.overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #0000005e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    margin: 0 auto;
+    max-width: 750px;
+  }
+
   /* navbar */
   body .lock {
     overflow: hidden;
   }
-  nav {
-    position: relative;
-    /* width: 100%; */
-    z-index: 20;
+  header .container {
+    margin: 20px auto 0 auto;
+    padding: 0 20px;
+    max-width: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .nav-menu {
+    padding: 7rem 0;
+    display: none;
+    position: absolute;
+    width: 70%;
+    left: 30%;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    z-index: 3;
   }
   #menu-icon {
-    z-index: 4;
-    display: block;
-  }
-  #menu-icon img {
-    border: 2px solid red;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    right: 100%;
     z-index: 50;
-    background-color: var(--secondary-green);
+    display: block;
   }
   .nav-menu li {
     display: block;
-    margin-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
   }
-
-  /* nav ul li {
-    margin-left: 0;
-    margin-top: 20px;
-  } */
 }

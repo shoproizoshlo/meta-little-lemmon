@@ -1,23 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HamburgerIcon from "../images/icon-hamburger.svg";
+import HamburgerIcon from "../images/icon-menu.svg";
+import CloseIcon from "../images/icon-close-menu.svg";
 import "./Nav.css";
+import { useState } from "react";
 
 export default function Nav() {
-  function teste() {
-    const menu = document.getElementById("menu");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    if (menu.style.display === "flex") {
+  function toggleMenu() {
+    let menu = document.getElementById("menu");
+    setIsMenuOpen((prevState) => !prevState);
+
+    if (menu.style.display === "block") {
       menu.style.display = "none";
+      // document.querySelector(".overlay").style.display = "none";
     } else {
-      menu.style.display = "flex";
+      menu.style.display = "block";
+      // document.querySelector(".overlay").style.display = "block";
     }
   }
+
   return (
     <>
       <nav className="nav-container">
-        <div id="menu-icon">
-          <img onClick={teste} src={HamburgerIcon} alt="hamburger icon" />
+        <div id="menu-icon" onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <img src={CloseIcon} alt="close icon" />
+          ) : (
+            <img src={HamburgerIcon} alt="menu icon" />
+          )}
         </div>
         <ul className="nav-menu" id="menu">
           <li>
