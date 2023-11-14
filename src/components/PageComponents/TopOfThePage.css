@@ -6,6 +6,9 @@
 .top-of-page p {
   max-width: 65ch;
 }
+.top-of-page h2 {
+  color: var(--highlight-light);
+}
 
 /* for responsive images */
 .heading-image {
