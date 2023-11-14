@@ -175,8 +175,6 @@ a:active {
 }
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
-    padding: 0 30px;
-    margin: 20px auto 0 auto;
+    max-width: none;
   }
 }
