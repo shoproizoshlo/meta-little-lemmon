@@ -19,34 +19,6 @@ export default function Nav() {
       menu.style.display = "block";
       document.querySelector(".overlay").style.display = "block";
     }
-
-    // click on the menu toggle buttons
-    const toggleLine = document.querySelectorAll(".q-line");
-
-    let currentOpenLine = null;
-
-    toggleLine.forEach((line, index) => {
-      line.addEventListener("click", () => {
-        const targetId = line.getAttribute("data-target");
-        const targetElement = document.getElementById(targetId);
-
-        if (currentOpenLine && currentOpenLine !== line) {
-          const currentTargetId = currentOpenLine.getAttribute("data-target");
-          const currentTargetElement = document.getElementById(currentTargetId);
-
-          currentTargetElement.classList.remove("open");
-          currentOpenLine.classList.remove("closing");
-        }
-
-        if (targetElement.classList.contains("open")) {
-          targetElement.classList.remove("open");
-        } else {
-          targetElement.classList.add("open");
-        }
-
-        currentOpenLine = line;
-      });
-    });
   }
 
   return (
