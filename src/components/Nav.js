@@ -19,6 +19,34 @@ export default function Nav() {
       menu.style.display = "block";
       document.querySelector(".overlay").style.display = "block";
     }
+
+    // click on the menu toggle buttons
+    const toggleLine = document.querySelectorAll(".q-line");
+
+    let currentOpenLine = null;
+
+    toggleLine.forEach((line, index) => {
+      line.addEventListener("click", () => {
+        const targetId = line.getAttribute("data-target");
+        const targetElement = document.getElementById(targetId);
+
+        if (currentOpenLine && currentOpenLine !== line) {
+          const currentTargetId = currentOpenLine.getAttribute("data-target");
+          const currentTargetElement = document.getElementById(currentTargetId);
+
+          currentTargetElement.classList.remove("open");
+          currentOpenLine.classList.remove("closing");
+        }
+
+        if (targetElement.classList.contains("open")) {
+          targetElement.classList.remove("open");
+        } else {
+          targetElement.classList.add("open");
+        }
+
+        currentOpenLine = line;
+      });
+    });
   }
 
   return (
@@ -32,16 +60,16 @@ export default function Nav() {
           )}
         </div>
         <ul className="nav-menu" id="menu">
-          <li>
+          <li className="q-line" data-target="menu-1">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="q-line" data-target="menu-2">
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className="q-line" data-target="menu-3">
             <Link to="/booking">Online Reservation</Link>
           </li>
-          <li>
+          <li className="q-line" data-target="menu-4">
             <Link to="/menu">Menu</Link>
           </li>
         </ul>

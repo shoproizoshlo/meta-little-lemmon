@@ -28,10 +28,6 @@ header li {
   text-transform: uppercase;
 }
 
-.closing {
-  transform: rotate(180deg);
-  transition: transform 0.5s ease;
-}
 .overlay {
   display: none;
   height: 100vh;
@@ -41,6 +37,15 @@ header li {
   top: 0;
   background-color: #0000005e;
   z-index: 2;
+}
+
+.open {
+  max-height: 250px;
+  transition: max-height 0.1s ease;
+}
+.closing {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
 }
 
 @media screen and (max-width: 767px) {
