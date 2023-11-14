@@ -4,8 +4,9 @@ footer {
   background-color: var(--secondary-green);
 }
 
-footer nav ul {
-  margin: 0;
+footer .nav-menu {
+  margin-bottom: 0.5rem;
+  margin-left: 0rem;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -14,13 +15,18 @@ footer nav ul {
   font-size: 16px;
   line-height: 24px;
 }
-footer nav ul li {
+footer .nav-menu li {
   text-transform: none;
+  margin-bottom: 0.5rem;
+  margin-left: 0rem;
 }
 @media screen and (max-width: 767px) {
   footer {
     margin-top: 100px;
     text-align: center;
+  }
+  footer #menu-icon {
+    display: none;
   }
   nav ul li {
     margin-top: 10px;

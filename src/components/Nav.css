@@ -1,4 +1,3 @@
-/* navbar */
 #menu-icon {
   display: none;
 }
@@ -20,30 +19,13 @@ header .nav-menu {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: "Markazi Text", serif;
+  font-size: 18px;
+  line-height: 27px;
 }
 header li {
-  display: inline-block;
-  margin-left: 4rem;
-}
-.login li:last-child {
-  border: 1px solid gray;
-  border-radius: 15px;
-  padding: 15px 20px;
-  transition: all 0.5s ease;
-}
-.login li:last-child:active,
-.login li:last-child:hover {
-  border: 1px solid black;
-}
-header a {
-  color: gray;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-header a:hover,
-header a:active {
-  cursor: pointer;
-  color: black;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
 
 .closing {
@@ -62,15 +44,17 @@ header a:active {
 }
 
 @media screen and (max-width: 767px) {
-  .container {
-    margin: 0 auto;
-    max-width: 750px;
-  }
-
-  /* navbar */
   body .lock {
     overflow: hidden;
   }
+
+  #menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    z-index: 40;
+  }
+
   header .container {
     margin: 20px auto 0 auto;
     padding: 0 20px;
@@ -80,8 +64,8 @@ header a:active {
     align-items: center;
   }
   header .nav-menu {
-    padding: 7rem 0;
     display: none;
+    padding: 7rem 0;
     position: absolute;
     left: 30%;
     top: 0;
@@ -91,23 +75,10 @@ header a:active {
     z-index: 20;
     transition: right 0.3s ease;
   }
-  .menu-open {
-    /* max-height: 250px; */
-    /* left: 30%; */
-    right: 0;
-    transition: max-height 0.1s ease;
-  }
 
   .nav-menu li {
     display: block;
     margin-bottom: 1.5rem;
     margin-left: 2rem;
-  }
-
-  #menu-icon {
-    display: block;
-    position: absolute;
-    right: 20px;
-    z-index: 40;
   }
 }
