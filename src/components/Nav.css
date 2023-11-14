@@ -57,7 +57,8 @@ header li {
   #menu-icon {
     display: block;
     position: absolute;
-    right: 5%;
+    right: 10%;
+    top: 30%;
     z-index: 40;
   }
 
