@@ -38,9 +38,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -166,7 +163,7 @@ a:active {
   padding: 0 15px;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .container {
     max-width: 970px;
   }
@@ -182,4 +179,4 @@ a:active {
     padding: 0 30px;
     margin: 0;
   }
-}
+} */
