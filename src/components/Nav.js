@@ -9,8 +9,8 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function toggleMenu() {
-    let menu = document.getElementById("menu");
     setIsMenuOpen((prevState) => !prevState);
+    let menu = document.getElementById("menu");
 
     if (menu.style.display === "block") {
       menu.style.display = "none";
