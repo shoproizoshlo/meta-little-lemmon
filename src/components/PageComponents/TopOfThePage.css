@@ -13,6 +13,7 @@
   height: 450px;
   overflow: hidden;
   position: relative;
+  top: 60px;
   border-radius: 40px;
 }
 
@@ -31,5 +32,6 @@
   .heading-image {
     flex: 0 0 37%;
     height: 250px;
+    width: 100%;
   }
 }

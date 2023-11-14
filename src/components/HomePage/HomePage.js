@@ -3,6 +3,7 @@ import TopOfThePage from "../PageComponents/TopOfThePage";
 import Specials from "./Specials";
 import CustomersSay from "./CustomersSay";
 import About from "../AboutPage/About";
+import HomepageTopImage from "../../images/restauranfood.jpg";
 
 export default function HomePage() {
   return (
@@ -16,7 +17,7 @@ export default function HomePage() {
               restaurant features a locally-sourced menu with daily specials."
           url="/booking"
           callToAction="Reserve a Table"
-          topPhoto="/"
+          topPhoto={HomepageTopImage}
         />
       </div>
       <div>
