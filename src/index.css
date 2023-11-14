@@ -178,3 +178,8 @@ a:active {
     max-width: none;
   }
 }
+@media screen and (max-width: 450px) {
+  .container {
+    max-width: 40vh;
+  }
+}
