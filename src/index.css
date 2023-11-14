@@ -163,7 +163,7 @@ a:active {
   padding: 0 15px;
 }
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .container {
     max-width: 970px;
   }
@@ -175,8 +175,8 @@ a:active {
 }
 @media screen and (max-width: 767px) {
   .container {
-    max-width: none;
+    width: 100%;
     padding: 0 30px;
-    margin: 0;
+    margin: 20px auto 0 auto;
   }
-} */
+}
