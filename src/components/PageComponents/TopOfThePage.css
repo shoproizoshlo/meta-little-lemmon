@@ -32,9 +32,13 @@
 /* --- */
 
 @media screen and (max-width: 767px) {
+  .top-of-page {
+    height: auto;
+  }
   .heading-image {
-    flex: 0 0 37%;
+    display: none;
+    /* flex: 0 0 37%;
     height: 250px;
-    width: 100%;
+    width: 100%; */
   }
 }
