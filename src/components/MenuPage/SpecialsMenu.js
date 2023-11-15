@@ -27,21 +27,13 @@ export default function SpecialsMenu(props) {
                       key={MenuDish["dish-name"]}
                       className="menu-position-item"
                     >
-                      <DishCard
-                        menu={menu}
-                        dishId={MenuDish["id"]}
-                        setDishId={setDishId}
-                      />
+                      <DishCard menu={menu} dishId={MenuDish["id"]} />
                     </div>
                   );
                 } else if (MenuDish["category"] === props.category) {
                   return (
                     <div key={MenuDish["dish-name"]} className="col-3 mb-3">
-                      <DishCard
-                        menu={menu}
-                        dishId={MenuDish["id"]}
-                        setDishId={setDishId}
-                      />
+                      <DishCard menu={menu} dishId={MenuDish["id"]} />
                     </div>
                   );
                 }
