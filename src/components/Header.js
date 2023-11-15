@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <div className="overlay"></div>
-      <header className="container d-flex justify-content-between justify-content-md-center align-items-center">
+      <header className="d-flex justify-content-between justify-content-md-center align-items-center mt-4 ps-4 pe-4">
         <img src={Logo} alt="logo" />
         <Nav />
       </header>
