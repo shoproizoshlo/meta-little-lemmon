@@ -8,7 +8,7 @@ export default function MenuPage() {
       <div>
         <TopOfThePage h1="Menu" h2="Find our amazing dishes" topPhoto="/" />
       </div>
-      <div className="container">
+      <div className="container-custom">
         <Menu />
       </div>
     </>

@@ -156,30 +156,30 @@ a:active {
   color: var(--primary-green);
 }
 
-/* page container */
-.container {
-  max-width: 1145px;
+/* page container-custom */
+.container-custom {
+  max-width: 1200px;
   margin: 40px auto 0 auto;
   padding: 0 15px;
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
+  .container-custom {
     max-width: 970px;
   }
 }
 @media screen and (max-width: 992px) {
-  .container {
+  .container-custom {
     max-width: 750px;
   }
 }
 @media screen and (max-width: 767px) {
-  .container {
+  .container-custom {
     max-width: none;
   }
 }
 @media screen and (max-width: 450px) {
-  .container {
+  .container-custom {
     max-width: 40vh;
   }
 }

@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className="container">
+        <div className="container-custom">
           <div className="d-md-flex justify-content-between mb-5">
             <div className="d-flex justify-content-center align-items-start">
               <img src={Logo} alt="logo" />

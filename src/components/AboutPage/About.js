@@ -4,7 +4,7 @@ import "./About.css";
 export default function About(props) {
   return (
     <>
-      <div className="about container">
+      <div className="about container-custom">
         <div>
           <h2>{props.h2}</h2>
           <p>{props.description}</p>

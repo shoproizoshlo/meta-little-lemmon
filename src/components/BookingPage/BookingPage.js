@@ -18,7 +18,7 @@ export default function BookingPage() {
       <div>
         <TopOfThePage h1="Reserve a table" topPhoto="/" />
       </div>
-      <div className="container">
+      <div className="container-custom">
         <BookingForm availableTimes={availableTimes} updateTimes={dispatch} />
       </div>
     </>

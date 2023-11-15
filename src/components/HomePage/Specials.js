@@ -6,7 +6,7 @@ import "./Specials.css";
 export default function Specials() {
   return (
     <>
-      <article className="container">
+      <article className="container-custom">
         <section>
           <div className="specials d-flex align-items-center justify-content-between mb-5">
             <h2>This week specials</h2>
