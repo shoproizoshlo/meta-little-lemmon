@@ -20,6 +20,10 @@ footer .nav-menu li {
   margin-bottom: 0.5rem;
   margin-left: 0rem;
 }
+
+footer .titel {
+  margin: 0;
+}
 @media screen and (max-width: 767px) {
   footer {
     margin-top: 100px;

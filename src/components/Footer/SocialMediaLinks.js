@@ -1,6 +1,5 @@
 import React from "react";
 import LinksList from "../PageComponents/LinksList";
-import "./SocialMediaLinks.css";
 
 export default function SocialMediaLinks() {
   const socialLinks = [
@@ -26,7 +25,7 @@ export default function SocialMediaLinks() {
     },
   ];
   return (
-    <div className="social-links">
+    <div className="social-links mt-3">
       <p className="titel">Socials</p>
       <LinksList data={socialLinks} />
     </div>
