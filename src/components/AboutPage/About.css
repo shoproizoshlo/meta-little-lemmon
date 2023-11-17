@@ -1,5 +1,5 @@
 .about {
-  margin: 7% 0;
+  margin: 7% auto;
 }
 
 .about > div {
@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 767px) {
   .about {
-    margin: 100px 0;
+    margin: 100px auto;
   }
 
   .about p {
