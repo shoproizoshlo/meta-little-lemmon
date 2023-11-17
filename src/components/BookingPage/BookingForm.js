@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
+import { updateTimes } from "./BookingPage";
 import * as Yup from "yup";
 import MySelect from "./MySelect";
 import MyField from "./MyField";
-import { updateTimes } from "./BookingPage";
+import CallToAction from "../PageComponents/CallToAction";
 import "./BookingForm.css";
 
 export default function BookingForm(props) {
@@ -152,7 +153,9 @@ export default function BookingForm(props) {
               </div>
             </div>
 
-            <button type="submit">Book Now</button>
+            <CallToAction callToAction="Book Now">
+              <button type="submit"></button>
+            </CallToAction>
           </Form>
         </div>
       </Formik>
