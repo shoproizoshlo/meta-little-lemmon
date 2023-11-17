@@ -3,6 +3,7 @@ import BookingForm from "./BookingForm";
 import TopOfThePage from "../PageComponents/TopOfThePage";
 import { useReducer } from "react";
 import { fetchAPI } from "../../bookingsAPI";
+import "./BookingPage.css";
 
 export function updateTimes(date) {
   console.log("fetchAPI", date, fetchAPI(date));
@@ -15,7 +16,7 @@ export default function BookingPage() {
   const [availableTimes, dispatch] = useReducer(updateTimes, output);
   return (
     <>
-      <div>
+      <div className="booking-top">
         <TopOfThePage h1="Reserve a table" topPhoto="/" />
       </div>
       <div className="container-custom">

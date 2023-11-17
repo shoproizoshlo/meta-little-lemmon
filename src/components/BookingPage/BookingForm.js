@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import MySelect from "./MySelect";
 import MyField from "./MyField";
 import { updateTimes } from "./BookingPage";
+import "./BookingForm.css";
 
 export default function BookingForm(props) {
   const [date, setDate] = useState("");
@@ -66,41 +67,67 @@ export default function BookingForm(props) {
           }, 400);
         }}
       >
-        <Form>
-          <label htmlFor="date">Choose date</label>
-          <MyField
-            name="date"
-            id="date"
-            type="date"
-            aria-labelledby="date"
-            value={date}
-            onChange={(e) => handleDateChange(e)}
-          />
-          <label htmlFor="time">Choose time</label>
-          <MySelect name="time" id="time" aria-labelledby="time">
-            <option value="">Select time</option>
-            {finalTime}
-          </MySelect>
-          <label htmlFor="guests">Number of guests</label>
-          <Field
-            name="guests"
-            id="guests"
-            aria-labelledby="guests"
-            type="number"
-            min={1}
-          />
-          <ErrorMessage name="guests" />
-          <label htmlFor="occasion">Occasion</label>
-          <MySelect name="occasion" id="occasion" aria-labelledby="occasion">
-            <option value="">Select a occasion</option>
-            <option value="birthday">Birthday</option>
-            <option value="anniversary">Anniversary</option>
-          </MySelect>
-          <label htmlFor="email">Email Address</label>
-          <Field name="email" id="email" aria-labelledby="email" type="email" />
-          <ErrorMessage name="email" />
-          <button type="submit">Book Now</button>
-        </Form>
+        <div className="form d-flex justify-content-center">
+          <Form>
+            <div className="d-md-flex justify-content-between">
+              <label htmlFor="date">Choose date</label>
+              <MyField
+                name="date"
+                id="date"
+                type="date"
+                aria-labelledby="date"
+                value={date}
+                onChange={(e) => handleDateChange(e)}
+              />
+            </div>
+
+            <div className="d-md-flex justify-content-between">
+              <label htmlFor="time">Choose time</label>
+              <MySelect name="time" id="time" aria-labelledby="time">
+                <option value="">Select time</option>
+                {finalTime}
+              </MySelect>
+            </div>
+
+            <div className="d-md-flex justify-content-between">
+              <label htmlFor="guests">Number of guests</label>
+              <Field
+                name="guests"
+                id="guests"
+                aria-labelledby="guests"
+                type="number"
+                min={1}
+              />
+              <ErrorMessage name="guests" />
+            </div>
+
+            <div className="d-md-flex justify-content-between">
+              <label htmlFor="occasion">Occasion</label>
+              <MySelect
+                name="occasion"
+                id="occasion"
+                aria-labelledby="occasion"
+              >
+                <option value="">Select a occasion</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+              </MySelect>
+            </div>
+
+            <div className="d-md-flex justify-content-between">
+              <label htmlFor="email">Email Address</label>
+              <Field
+                name="email"
+                id="email"
+                aria-labelledby="email"
+                type="email"
+              />
+              <ErrorMessage name="email" />
+            </div>
+
+            <button type="submit">Book Now</button>
+          </Form>
+        </div>
       </Formik>
     </>
   );

@@ -1,0 +1,17 @@
+.booking-top .top-of-page {
+  height: 160px;
+}
+
+.booking-top button,
+.booking-top img {
+  display: none;
+}
+.booking-top h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .booking-top .top-of-page {
+    height: 160px;
+  }
+}
