@@ -36,7 +36,10 @@ export default function SpecialsMenu(props) {
                   );
                 } else if (MenuDish["category"] === props.category) {
                   return (
-                    <div key={MenuDish["dish-name"]} className="col-3 mb-3">
+                    <div
+                      key={MenuDish["dish-name"]}
+                      className="menu-position-item mb-3"
+                    >
                       <DishCard menu={menu} dishId={MenuDish["id"]} />
                     </div>
                   );

@@ -5,6 +5,7 @@ import CustomersSay from "./CustomersSay";
 import About from "../AboutPage/About";
 import HomepageTopImage from "../../assets/restauranfood.jpg";
 import AboutImage from "../../assets/restaurant-chef-B.jpg";
+import "./HomePage.css";
 
 export default function HomePage() {
   return (
@@ -21,7 +22,7 @@ export default function HomePage() {
           topPhoto={HomepageTopImage}
         />
       </div>
-      <div>
+      <div className="home-specials">
         <Specials />
       </div>
       <div>
