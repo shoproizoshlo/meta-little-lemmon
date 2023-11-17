@@ -67,9 +67,9 @@ export default function BookingForm(props) {
           }, 400);
         }}
       >
-        <div className="form d-flex justify-content-start">
+        <div className="form d-flex justify-content-center">
           <Form>
-            <div className="d-flex flex-column align-items-start">
+            <div className="d-flex flex-column align-items-end">
               <div className="d-md-flex justify-content-md-between justify-content-start">
                 <label htmlFor="date">Choose date</label>
                 <MyField
@@ -81,12 +81,12 @@ export default function BookingForm(props) {
                   onChange={(e) => handleDateChange(e)}
                 />
               </div>
-              <div className="error d-flex justify-content-end">
+              <div className="error">
                 <ErrorMessage name="date" />
               </div>
             </div>
 
-            <div className="d-flex flex-column align-items-start">
+            <div className="d-flex flex-column align-items-end">
               <div className="d-md-flex justify-content-between">
                 <MySelect
                   name="time"
@@ -98,12 +98,12 @@ export default function BookingForm(props) {
                   {finalTime}
                 </MySelect>
               </div>
-              <div className="error d-flex justify-content-end">
+              <div className="error">
                 <ErrorMessage className="error" name="time" />
               </div>
             </div>
 
-            <div className="d-flex flex-column align-items-start">
+            <div className="d-flex flex-column align-items-end">
               <div className="d-md-flex justify-content-between">
                 <label htmlFor="guests">Number of guests</label>
                 <Field
@@ -114,12 +114,12 @@ export default function BookingForm(props) {
                   min={1}
                 />
               </div>
-              <div className="error d-flex justify-content-end">
+              <div className="error">
                 <ErrorMessage className="error" name="guests" />
               </div>
             </div>
 
-            <div className="d-flex flex-column  align-items-start">
+            <div className="d-flex flex-column  align-items-end">
               <div className="d-md-flex justify-content-between">
                 <MySelect
                   name="occasion"
@@ -132,12 +132,12 @@ export default function BookingForm(props) {
                   <option value="anniversary">Anniversary</option>
                 </MySelect>
               </div>
-              <div className="error d-flex justify-content-end">
+              <div className="error">
                 <ErrorMessage className="error" name="occasion" />
               </div>
             </div>
 
-            <div className="d-flex flex-column  align-items-start">
+            <div className="d-flex flex-column  align-items-end">
               <div className="d-md-flex justify-content-between">
                 <label htmlFor="email">Email Address</label>
                 <Field
@@ -147,7 +147,7 @@ export default function BookingForm(props) {
                   type="email"
                 />
               </div>
-              <div className="error d-flex justify-content-end">
+              <div className="error">
                 <ErrorMessage className="error" name="email" />
               </div>
             </div>

@@ -10,7 +10,7 @@
 }
 .form form input,
 .form form select {
-  padding: 5px 20px;
+  padding: 5px 20px;    
   width: 150px;
   border: 2px solid var(--primary-green);
   border-radius: 7px;
