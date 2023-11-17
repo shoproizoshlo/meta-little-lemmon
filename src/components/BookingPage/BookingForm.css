@@ -1,6 +1,17 @@
-.form {
+/* .form {
   width: 100%;
+} */
+.form form > div {
+  margin-bottom: 20px;
 }
 .form form label {
   padding-right: 10px;
+}
+.form form input {
+  width: 150px;
+  border: 2px solid var(--primary-green);
+  border-radius: 7px;
+}
+.form form .error {
+  color: var(--secondary-peach);
 }

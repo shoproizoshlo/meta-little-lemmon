@@ -69,60 +69,83 @@ export default function BookingForm(props) {
       >
         <div className="form d-flex justify-content-center">
           <Form>
-            <div className="d-md-flex justify-content-between">
-              <label htmlFor="date">Choose date</label>
-              <MyField
-                name="date"
-                id="date"
-                type="date"
-                aria-labelledby="date"
-                value={date}
-                onChange={(e) => handleDateChange(e)}
-              />
+            <div className="d-flex flex-column">
+              <div className="d-md-flex justify-content-between">
+                <label htmlFor="date">Choose date</label>
+                <MyField
+                  name="date"
+                  id="date"
+                  type="date"
+                  aria-labelledby="date"
+                  value={date}
+                  onChange={(e) => handleDateChange(e)}
+                />
+              </div>
+              <div className="error d-flex justify-content-end">
+                <ErrorMessage name="date" />
+              </div>
             </div>
 
-            <div className="d-md-flex justify-content-between">
-              <label htmlFor="time">Choose time</label>
-              <MySelect name="time" id="time" aria-labelledby="time">
-                <option value="">Select time</option>
-                {finalTime}
-              </MySelect>
+            <div className="d-flex flex-column">
+              <div className="d-md-flex justify-content-between">
+                <label htmlFor="time">Choose time</label>
+                <MySelect name="time" id="time" aria-labelledby="time">
+                  <option value="">Select time</option>
+                  {finalTime}
+                </MySelect>
+              </div>
+              <div className="error d-flex justify-content-end">
+                <ErrorMessage className="error" name="time" />
+              </div>
             </div>
 
-            <div className="d-md-flex justify-content-between">
-              <label htmlFor="guests">Number of guests</label>
-              <Field
-                name="guests"
-                id="guests"
-                aria-labelledby="guests"
-                type="number"
-                min={1}
-              />
-              <ErrorMessage name="guests" />
+            <div className="d-flex flex-column">
+              <div className="d-md-flex justify-content-between">
+                <label htmlFor="guests">Number of guests</label>
+                <Field
+                  name="guests"
+                  id="guests"
+                  aria-labelledby="guests"
+                  type="number"
+                  min={1}
+                />
+              </div>
+              <div className="error d-flex justify-content-end">
+                <ErrorMessage className="error" name="guests" />
+              </div>
             </div>
 
-            <div className="d-md-flex justify-content-between">
-              <label htmlFor="occasion">Occasion</label>
-              <MySelect
-                name="occasion"
-                id="occasion"
-                aria-labelledby="occasion"
-              >
-                <option value="">Select a occasion</option>
-                <option value="birthday">Birthday</option>
-                <option value="anniversary">Anniversary</option>
-              </MySelect>
+            <div className="d-flex flex-column">
+              <div className="d-md-flex justify-content-between">
+                <label htmlFor="occasion">Occasion</label>
+                <MySelect
+                  name="occasion"
+                  id="occasion"
+                  aria-labelledby="occasion"
+                >
+                  <option value="">Select a occasion</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                </MySelect>
+              </div>
+              <div className="error d-flex justify-content-end">
+                <ErrorMessage className="error" name="occasion" />
+              </div>
             </div>
 
-            <div className="d-md-flex justify-content-between">
-              <label htmlFor="email">Email Address</label>
-              <Field
-                name="email"
-                id="email"
-                aria-labelledby="email"
-                type="email"
-              />
-              <ErrorMessage name="email" />
+            <div className="d-flex flex-column">
+              <div className="d-md-flex justify-content-between">
+                <label htmlFor="email">Email Address</label>
+                <Field
+                  name="email"
+                  id="email"
+                  aria-labelledby="email"
+                  type="email"
+                />
+              </div>
+              <div className="error d-flex justify-content-end">
+                <ErrorMessage className="error" name="email" />
+              </div>
             </div>
 
             <button type="submit">Book Now</button>

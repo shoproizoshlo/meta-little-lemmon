@@ -21,7 +21,7 @@ const MyField = (props) => {
   return (
     <>
       <input {...props} {...field} />
-      {!!meta.touched && !!meta.error && <div>{meta.error}</div>}
+      {/* {!!meta.touched && !!meta.error && <div>{meta.error}</div>} */}
     </>
   );
 };
