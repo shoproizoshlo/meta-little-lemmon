@@ -8,12 +8,9 @@ const DishCard = ({ dishId, menu }) => {
   return (
     <>
       <article className="d-flex flex-column">
-        <img
-          src={specialsCard["dish-image"]}
-          alt="dish"
-          className="dish-image"
-        />
-
+        <div className="dish-image">
+          <img src={specialsCard["dish-image"]} alt="dish" />
+        </div>
         <div className="dish-description d-flex flex-column">
           <div className="d-flex align-items-center justify-content-between">
             <p className="titel">{specialsCard["dish-name"]}</p>

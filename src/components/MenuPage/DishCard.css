@@ -25,3 +25,14 @@
 .dish-description > div:first-child p:nth-child(2) {
   color: var(--secondary-peach);
 }
+
+@media screen and (max-width: 767px) {
+  .dish-image {
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .dish-image {
+    min-height: 225px;
+  }
+}
