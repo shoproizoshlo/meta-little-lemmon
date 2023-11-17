@@ -2,7 +2,7 @@ import React from "react";
 import TopOfThePage from "../PageComponents/TopOfThePage";
 import About from "./About";
 import RestaurantView from "../../assets/restaurant.jpg";
-import Chef from "../../assets/restaurant-chef-B.jpg";
+import Chefs from "../../assets/Mario-and-Adrian-A.jpg";
 import "./AboutPage.css";
 
 export default function AboutPage(props) {
@@ -14,7 +14,7 @@ export default function AboutPage(props) {
           text="Lille Lemon is a charming neighborhood bistro thatserves simple
               food and classic cocktails in a lively but casual environment. The
               restaurant features a locally-sourced menu with daily specials."
-          topPhoto={Chef}
+          topPhoto={Chefs}
         />
       </div>
       <div className="about-description">

@@ -1,8 +1,12 @@
+.top-about .top-of-page {
+  height: 300px;
+}
+
+.top-about .heading-image img {
+  object-position: 76%;
+}
+
 .top-about button,
 .about-description img {
   display: none;
-}
-
-.top-about .top-of-page {
-  height: 300px;
 }
