@@ -6,10 +6,7 @@
       "name": "Alex Smith",
       "image": "testimonial-images/person1.jpg",
       "password": "alexrocks",
-      "address": [
-        "chicago 1213 building",
-        "los angelas 123/12 garden west"
-      ],
+      "address": ["chicago 1213 building", "los angelas 123/12 garden west"],
       "reservations": [],
       "cart": [
         {
