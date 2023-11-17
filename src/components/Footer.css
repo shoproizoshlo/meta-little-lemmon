@@ -23,6 +23,11 @@ footer .nav-menu li {
 footer .titel {
   margin: 0;
 }
+
+.footer-container div {
+  flex: 1;
+  padding: 0 10px;
+}
 @media screen and (max-width: 767px) {
   footer {
     text-align: center;

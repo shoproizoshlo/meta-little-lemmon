@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FooterContact() {
   return (
-    <div className="contact-links">
+    <div className="contact-links mb-4">
       <p className="titel">Contact</p>
       <ul>
         <li>
