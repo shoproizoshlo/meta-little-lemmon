@@ -67,10 +67,10 @@ export default function BookingForm(props) {
           }, 400);
         }}
       >
-        <div className="form d-flex justify-content-center">
+        <div className="form d-flex justify-content-start">
           <Form>
-            <div className="d-flex flex-column">
-              <div className="d-md-flex justify-content-between">
+            <div className="d-flex flex-column align-items-start">
+              <div className="d-md-flex justify-content-md-between justify-content-start">
                 <label htmlFor="date">Choose date</label>
                 <MyField
                   name="date"
@@ -86,10 +86,14 @@ export default function BookingForm(props) {
               </div>
             </div>
 
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column align-items-start">
               <div className="d-md-flex justify-content-between">
-                <label htmlFor="time">Choose time</label>
-                <MySelect name="time" id="time" aria-labelledby="time">
+                <MySelect
+                  name="time"
+                  id="time"
+                  label="Choose time"
+                  aria-labelledby="time"
+                >
                   <option value="">Select time</option>
                   {finalTime}
                 </MySelect>
@@ -99,7 +103,7 @@ export default function BookingForm(props) {
               </div>
             </div>
 
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column align-items-start">
               <div className="d-md-flex justify-content-between">
                 <label htmlFor="guests">Number of guests</label>
                 <Field
@@ -115,12 +119,12 @@ export default function BookingForm(props) {
               </div>
             </div>
 
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column  align-items-start">
               <div className="d-md-flex justify-content-between">
-                <label htmlFor="occasion">Occasion</label>
                 <MySelect
                   name="occasion"
                   id="occasion"
+                  label="Occasion"
                   aria-labelledby="occasion"
                 >
                   <option value="">Select a occasion</option>
@@ -133,7 +137,7 @@ export default function BookingForm(props) {
               </div>
             </div>
 
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column  align-items-start">
               <div className="d-md-flex justify-content-between">
                 <label htmlFor="email">Email Address</label>
                 <Field

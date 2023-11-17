@@ -2,16 +2,27 @@
   width: 100%;
 } */
 .form form > div {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .form form label {
-  padding-right: 10px;
+  padding-right: 20px;
+  width: 150px;
 }
-.form form input {
+.form form input,
+.form form select {
+  padding: 5px 20px;
   width: 150px;
   border: 2px solid var(--primary-green);
   border-radius: 7px;
 }
 .form form .error {
   color: var(--secondary-peach);
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
 }
