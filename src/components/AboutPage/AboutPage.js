@@ -1,18 +1,23 @@
 import React from "react";
 import TopOfThePage from "../PageComponents/TopOfThePage";
 import About from "./About";
+import RestaurantView from "../../assets/restaurant.jpg";
+import Chef from "../../assets/restaurant-chef-B.jpg";
+import "./AboutPage.css";
 
 export default function AboutPage(props) {
   return (
     <>
-      <div>
+      <div className="top-about">
         <TopOfThePage
           h1="About"
-          h2="Here is some information about us"
-          topPhoto="/"
+          text="Lille Lemon is a charming neighborhood bistro thatserves simple
+              food and classic cocktails in a lively but casual environment. The
+              restaurant features a locally-sourced menu with daily specials."
+          topPhoto={Chef}
         />
-      </div>{" "}
-      <div>
+      </div>
+      <div className="about-description">
         <About
           description="Little Lemon Restaurant in Chicago is a charming culinary gem known for
         its delightful fusion of flavors and warm, welcoming atmosphere. This
