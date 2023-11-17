@@ -1,0 +1,8 @@
+.user-photo {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.lemon-icon {
+  color: var(--primary-yellow);
+}
