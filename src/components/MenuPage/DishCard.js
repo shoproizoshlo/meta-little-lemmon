@@ -3,13 +3,13 @@ import "./DishCard.css";
 
 const DishCard = ({ dishId, menu }) => {
   const specialsCard = menu.find((dish) => dish.id === dishId);
-  console.log(`src/images/${specialsCard["dish-image"]}`);
+  console.log(specialsCard["dish-image"]);
 
   return (
     <>
       <article className="d-flex flex-column">
         <img
-          src={`src/images/${specialsCard["dish-image"]}`}
+          src={specialsCard["dish-image"]}
           alt="dish"
           className="dish-image"
         />

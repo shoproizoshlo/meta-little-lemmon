@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-import Logo from "../images/Logo.svg";
+import Logo from "../assets/Logo.svg";
 import FooterContact from "./Footer/FooterContact";
 import SocialMediaLinks from "./Footer/SocialMediaLinks";
 import "./Footer.css";

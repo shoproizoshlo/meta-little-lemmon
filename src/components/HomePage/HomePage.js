@@ -3,7 +3,7 @@ import TopOfThePage from "../PageComponents/TopOfThePage";
 import Specials from "./Specials";
 import CustomersSay from "./CustomersSay";
 import About from "../AboutPage/About";
-import HomepageTopImage from "../../images/restauranfood.jpg";
+import HomepageTopImage from "../../assets/restauranfood.jpg";
 
 export default function HomePage() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HamburgerIcon from "../images/icon-menu.svg";
-import CloseIcon from "../images/icon-close-menu.svg";
+import HamburgerIcon from "../assets/icon-menu.svg";
+import CloseIcon from "../assets/icon-close-menu.svg";
 import "./Nav.css";
 import { useState } from "react";
 
