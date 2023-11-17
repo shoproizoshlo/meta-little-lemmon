@@ -4,6 +4,7 @@ import Specials from "./Specials";
 import CustomersSay from "./CustomersSay";
 import About from "../AboutPage/About";
 import HomepageTopImage from "../../assets/restauranfood.jpg";
+import AboutImage from "../../assets/restaurant-chef-B.jpg";
 
 export default function HomePage() {
   return (
@@ -30,7 +31,7 @@ export default function HomePage() {
         <About
           h2="About us"
           description="Little Lemon Restaurant in Chicago: A citrus-infused culinary haven. Savor a unique blend of zesty flavors in every dish, from appetizers to desserts. Experience a refreshing twist on classic favorites. Your taste buds will thank you!"
-          topPhoto="/"
+          aboutImage={AboutImage}
         />
       </div>
     </>
