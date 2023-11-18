@@ -32,7 +32,7 @@ export default function SpecialsMenu(props) {
                   return (
                     <div
                       key={MenuDish["dish-name"]}
-                      className="menu-position-item"
+                      className="menu-position-item mb-5"
                     >
                       <DishCard menu={menu} dishId={MenuDish["id"]} />
                     </div>
