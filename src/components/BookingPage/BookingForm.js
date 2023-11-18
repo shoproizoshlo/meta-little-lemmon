@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { updateTimes } from "./BookingPage";
 import * as Yup from "yup";
@@ -14,11 +16,15 @@ export default function BookingForm(props) {
     props.availableTimes.map((times) => <option key={times}>{times}</option>)
   );
 
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate("/booking-confirmed");
+  };
+
   function handleDateChange(e) {
     setDate(e.target.value);
 
     const date = new Date(e.target.value);
-    console.log("date", date);
 
     updateTimes(date);
     console.log("update times", updateTimes(date));
@@ -64,6 +70,7 @@ export default function BookingForm(props) {
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
+            handleButtonClick();
             setSubmitting(false);
           }, 400);
         }}
@@ -153,7 +160,7 @@ export default function BookingForm(props) {
               </div>
             </div>
 
-            <CallToAction callToAction="Book Now">
+            <CallToAction type="submit" callToAction="Book Now">
               <button type="submit"></button>
             </CallToAction>
           </Form>

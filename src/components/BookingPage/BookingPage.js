@@ -6,12 +6,10 @@ import TopOfThePage from "../PageComponents/TopOfThePage";
 import "./BookingPage.css";
 
 export function updateTimes(date) {
-  console.log("fetchAPI", date, fetchAPI(date));
   return fetchAPI(date);
 }
 export default function BookingPage() {
   const output = fetchAPI(new Date());
-  console.log("output", output);
 
   const [availableTimes, dispatch] = useReducer(updateTimes, output);
   return (

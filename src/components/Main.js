@@ -15,7 +15,7 @@ export default function Main() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/menu" element={<MenuPage />} />
-          <Route path="/booking-submit" element={<ThankYouPage />} />
+          <Route path="/booking-confirmed" element={<ThankYouPage />} />
         </Routes>
       </main>
     </>
