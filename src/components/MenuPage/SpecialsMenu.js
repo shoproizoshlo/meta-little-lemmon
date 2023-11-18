@@ -23,22 +23,16 @@ export default function SpecialsMenu(props) {
       <article>
         <section>
           <div>
-            <div className="d-md-flex justify-content-between">
+            <div className="d-md-flex flex-wrap justify-content-between">
               {menu.slice(0, props.displayCount).map((MenuDish) => {
-                if (MenuDish[props.special] === "true") {
+                if (
+                  MenuDish[props.special] === "true" ||
+                  MenuDish["category"] === props.category
+                ) {
                   return (
                     <div
                       key={MenuDish["dish-name"]}
-                      className="menu-position-item"
-                    >
-                      <DishCard menu={menu} dishId={MenuDish["id"]} />
-                    </div>
-                  );
-                } else if (MenuDish["category"] === props.category) {
-                  return (
-                    <div
-                      key={MenuDish["dish-name"]}
-                      className="menu-position-item mb-3"
+                      className="menu-position-item col-md-4"
                     >
                       <DishCard menu={menu} dishId={MenuDish["id"]} />
                     </div>
