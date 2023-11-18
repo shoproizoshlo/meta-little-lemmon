@@ -37,7 +37,6 @@
     order: 2;
   }
   .about-image {
-    /* flex: 0 0 37%; */
     height: 350px;
     order: 1;
   }

@@ -1,11 +1,10 @@
 .flex-container {
   display: flex;
-  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку, если не помещаются в одну строку */
+  flex-wrap: wrap;
 }
 
 .menu-position-item {
   flex: 0 1 30%;
-  /* margin-right: 30px; */
   overflow: hidden;
   border: 1px solid var(--primary-yellow);
   border-radius: 20px 20px 0 0;

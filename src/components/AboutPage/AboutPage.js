@@ -1,7 +1,6 @@
 import React from "react";
 import TopOfThePage from "../PageComponents/TopOfThePage";
 import About from "./About";
-import RestaurantView from "../../assets/restaurant.jpg";
 import Chefs from "../../assets/Mario-and-Adrian-A.jpg";
 import "./AboutPage.css";
 

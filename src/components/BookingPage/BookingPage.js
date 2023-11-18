@@ -1,8 +1,8 @@
 import React from "react";
-import BookingForm from "./BookingForm";
-import TopOfThePage from "../PageComponents/TopOfThePage";
 import { useReducer } from "react";
 import { fetchAPI } from "../../bookingsAPI";
+import BookingForm from "./BookingForm";
+import TopOfThePage from "../PageComponents/TopOfThePage";
 import "./BookingPage.css";
 
 export function updateTimes(date) {

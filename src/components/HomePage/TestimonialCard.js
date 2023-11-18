@@ -19,10 +19,7 @@ const TestimonialCard = ({ testimonialItem }) => {
   return (
     <>
       <article className="d-flex flex-column m-3">
-        <div
-          className="d-flex justify-content-center justify-content-md-start align-items-center
-"
-        >
+        <div className="d-flex justify-content-center justify-content-md-start align-items-center">
           <img
             src={testimonialItem["image"]}
             alt="user"

@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useState } from "react";
 import React from "react";
+import { useState } from "react";
 import TestimonialCard from "./TestimonialCard";
 import "./Testimonials.css";
 
