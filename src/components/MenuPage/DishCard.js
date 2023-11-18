@@ -13,7 +13,7 @@ const DishCard = ({ dishId, menu }) => {
         </div>
         <div className="dish-description d-flex flex-column">
           <div className="d-flex align-items-center justify-content-between">
-            <p className="titel">{specialsCard["dish-name"]}</p>
+            <p className="titel me-2">{specialsCard["dish-name"]}</p>
             <p className="highlight price">${specialsCard["dish-price"]}</p>
           </div>
           <div>
