@@ -5,33 +5,18 @@ import CloseIcon from "../assets/icon-close-menu.svg";
 import "./Nav.css";
 import { useState } from "react";
 
-export default function Nav() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  function toggleMenu() {
-    setIsMenuOpen((prevState) => !prevState);
-    let menu = document.getElementById("menu");
-
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-      document.querySelector(".overlay").style.display = "none";
-    } else {
-      menu.style.display = "block";
-      document.querySelector(".overlay").style.display = "block";
-    }
-  }
-
+export default function Nav(props) {
   return (
     <>
       <nav className="nav-container">
-        <div id="menu-icon" onClick={toggleMenu}>
-          {isMenuOpen ? (
+        <div id="menu-icon" onClick={props.toggleMenu}>
+          {props.isMenuOpen ? (
             <img src={CloseIcon} alt="close icon" />
           ) : (
             <img src={HamburgerIcon} alt="menu icon" />
           )}
         </div>
-        <ul className="nav-menu" id="menu">
+        <ul className="nav-menu" id="menu" onClick={props.toggleMenu}>
           <li className="q-line" data-target="menu-1">
             <Link to="/">Home</Link>
           </li>
