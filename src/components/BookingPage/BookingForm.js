@@ -71,7 +71,7 @@ export default function BookingForm(props) {
         <div className="form d-flex justify-content-center">
           <Form>
             <div className="d-flex flex-column align-items-end">
-              <div className="d-md-flex justify-content-md-between justify-content-start">
+              <div className="d-md-flex justify-content-md-between justify-content-start align-items-center">
                 <label htmlFor="date">Choose date</label>
                 <MyField
                   name="date"
@@ -88,7 +88,7 @@ export default function BookingForm(props) {
             </div>
 
             <div className="d-flex flex-column align-items-end">
-              <div className="d-md-flex justify-content-between">
+              <div className="d-md-flex justify-content-between  align-items-center">
                 <MySelect
                   name="time"
                   id="time"
@@ -105,7 +105,7 @@ export default function BookingForm(props) {
             </div>
 
             <div className="d-flex flex-column align-items-end">
-              <div className="d-md-flex justify-content-between">
+              <div className="d-md-flex justify-content-between  align-items-center">
                 <label htmlFor="guests">Number of guests</label>
                 <Field
                   name="guests"
@@ -121,7 +121,7 @@ export default function BookingForm(props) {
             </div>
 
             <div className="d-flex flex-column  align-items-end">
-              <div className="d-md-flex justify-content-between">
+              <div className="d-md-flex justify-content-between  align-items-center">
                 <MySelect
                   name="occasion"
                   id="occasion"
@@ -139,7 +139,7 @@ export default function BookingForm(props) {
             </div>
 
             <div className="d-flex flex-column  align-items-end">
-              <div className="d-md-flex justify-content-between">
+              <div className="d-md-flex justify-content-between  align-items-center">
                 <label htmlFor="email">Email Address</label>
                 <Field
                   name="email"
