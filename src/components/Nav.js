@@ -15,7 +15,7 @@ export default function Nav(props) {
             <img src={HamburgerIcon} alt="menu icon" />
           )}
         </div>
-        <ul className="nav-menu" id="menu" onClick={props.toggleMenu}>
+        <ul className="nav-menu" id="menu">
           <li className="q-line" data-target="menu-1">
             <Link to="/">Home</Link>
           </li>
