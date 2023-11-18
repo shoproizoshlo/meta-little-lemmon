@@ -1,0 +1,14 @@
+.menu-top .top-of-page {
+  height: 200px;
+}
+
+.menu-top button,
+.menu-top img {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-top .top-of-page {
+    height: 200px;
+  }
+}
