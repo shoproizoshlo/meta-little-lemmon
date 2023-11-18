@@ -8,7 +8,7 @@ const MyField = (props) => {
     touched,
     setFieldValue,
   } = useFormikContext();
-  const [field, meta] = useField(props);
+  const [field] = useField(props);
 
   React.useEffect(() => {
     // set the value of data
