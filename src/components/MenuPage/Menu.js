@@ -6,17 +6,17 @@ export default function Menu() {
   return (
     <>
       <ul className="d-md-flex">
-        <li>
+        <li className="me-3">
           <HashLink smooth to={"/menu#specials"}>
             Specials
           </HashLink>
         </li>
-        <li>
+        <li className="me-3">
           <HashLink smooth to={"/menu#entrees"}>
             Entrees
           </HashLink>
         </li>
-        <li>
+        <li className="me-3">
           <HashLink smooth to={"/menu#appetizers"}>
             Appetizers
           </HashLink>
@@ -28,19 +28,19 @@ export default function Menu() {
         </li>
       </ul>
       <div className="mb-5">
-        <p id="special">Specials</p>
+        <h2 id="special">Specials</h2>
         <SpecialsMenu special="special" />
       </div>
       <div className="mb-5">
-        <p id="entrees">Entrees</p>
+        <h2 id="entrees">Entrees</h2>
         <SpecialsMenu category="Entrees" />
       </div>
       <div className="mb-5">
-        <p id="appetizers">Appetizers</p>
+        <h2 id="appetizers">Appetizers</h2>
         <SpecialsMenu category="Appetizers" />
       </div>
       <div className="mb-5">
-        <p id="desserts">Desserts</p>
+        <h2 id="desserts">Desserts</h2>
         <SpecialsMenu category="Desserts" />
       </div>
     </>
