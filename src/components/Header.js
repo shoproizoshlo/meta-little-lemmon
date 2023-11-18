@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import Nav from "./Nav";
-import "./Header.css";
 import Logo from "../assets/Logo.svg";
 
 export default function Header() {

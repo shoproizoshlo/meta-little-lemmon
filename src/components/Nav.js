@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import HamburgerIcon from "../assets/icon-menu.svg";
 import CloseIcon from "../assets/icon-close-menu.svg";
 import "./Nav.css";
-import { useState } from "react";
 
 export default function Nav(props) {
   return (

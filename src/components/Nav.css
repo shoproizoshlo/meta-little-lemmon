@@ -1,17 +1,7 @@
 #menu-icon {
   display: none;
 }
-/* header {
-  padding: 2rem 0;
-  position: relative;
-} */
-/* header .container {
-  max-width: 1145px;
-  margin: 40px auto 0 auto;
-  padding: 0 15px;
-  justify-content: start;
-  align-items: center;
-} */
+
 header .nav-menu {
   margin: 0;
   padding: 0;
@@ -57,20 +47,9 @@ header li {
   #menu-icon {
     display: block;
     position: relative;
-    /* position: absolute;
-    right: 5%;
-    top: 30%; */
     z-index: 40;
   }
 
-  /* header .container {
-    margin: 20px auto 0 auto;
-    padding: 0 20px;
-    max-width: none;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  } */
   header .nav-menu {
     display: none;
     padding: 7rem 0;
