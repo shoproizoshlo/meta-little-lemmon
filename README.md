@@ -58,6 +58,7 @@ Using React you put your skills into practice to build a web app for the Little 
 
 ### Useful resources
 
+- [Hash link](https://www.npmjs.com/package/react-router-hash-link) - Help create a smoothly scroll to the element.
 - [Restaurant API](https://little-lemon-restaurant-database.onrender.com/) - Here is the API with all data for the project.
 - [Formik](https://formik.org/docs/tutorial) - Library that provides easy way to build and validate forms.
 
