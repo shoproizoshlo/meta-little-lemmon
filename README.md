@@ -50,9 +50,10 @@ Using React you put your skills into practice to build a web app for the Little 
 ### Continued development
 
 - Another ways to close mobile menu
+- Nav in the footer should link to the top of page
 - Fix table reservation
-- Online order
-- Login
+- Add online order feature
+- Add Login and user account feature
 - User history reservations&orders
 
 ### Useful resources
