@@ -7,7 +7,7 @@ import "./MenuPage.css";
 export default function MenuPage() {
   return (
     <>
-      <div className="menu-top">
+      <div className="menu-top" id="menu">
         <TopOfThePage
           h1="Menu"
           text="Find our amazing dishes"

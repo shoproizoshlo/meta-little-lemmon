@@ -7,7 +7,7 @@ import "./AboutPage.css";
 export default function AboutPage(props) {
   return (
     <>
-      <div className="top-about">
+      <div className="top-about" id="about">
         <TopOfThePage
           h1="About"
           text="Lille Lemon is a charming neighborhood bistro thatserves simple

@@ -14,7 +14,7 @@ export default function BookingPage() {
   const [availableTimes, dispatch] = useReducer(updateTimes, output);
   return (
     <>
-      <div className="booking-top">
+      <div className="booking-top" id="booking">
         <TopOfThePage h1="Reserve a table" topPhoto="/" />
       </div>
       <div className="container-custom mt-5 mb-5">

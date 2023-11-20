@@ -3,7 +3,6 @@ import "./DishCard.css";
 
 const DishCard = ({ dishId, menu }) => {
   const specialsCard = menu.find((dish) => dish.id === dishId);
-  console.log(specialsCard["dish-image"]);
 
   return (
     <>
