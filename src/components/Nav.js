@@ -18,32 +18,28 @@ export default function Nav(props) {
         </div>
         <ul className="nav-menu" id="menu">
           <li className="q-line" data-target="menu-1">
-            <Link to="/">
-              <HashLink smooth to={"/#home"}>
-                Home
-              </HashLink>
-            </Link>
+            <HashLink smooth to={"/#home"}>
+              Home
+            </HashLink>
+            {/* <Link to="/">Home</Link> */}
           </li>
           <li className="q-line" data-target="menu-2">
-            <Link to="/about">
-              <HashLink smooth to={"/about#about"}>
-                About
-              </HashLink>
-            </Link>
+            <HashLink smooth to={"/about#about"}>
+              About
+            </HashLink>
+            {/* <Link to="/about">About</Link> */}
           </li>
           <li className="q-line" data-target="menu-3">
-            <Link to="/booking">
-              <HashLink smooth to={"/booking#booking"}>
-                Online Reservation
-              </HashLink>
-            </Link>
+            <HashLink smooth to={"/booking#booking"}>
+              Online Reservation
+            </HashLink>
+            {/* <Link to="/booking">Online Reservation</Link> */}
           </li>
           <li className="q-line" data-target="menu-4">
-            <Link to="/menu">
-              <HashLink smooth to={"/menu#menu"}>
-                Menu
-              </HashLink>
-            </Link>
+            <HashLink smooth to={"/menu#dishes"}>
+              Menu
+            </HashLink>
+            {/* <Link to="/menu">Menu</Link> */}
           </li>
         </ul>
       </nav>
