@@ -26,7 +26,15 @@ export default function Footer() {
           </div>
           <div className="d-flex flex-column align-items-center">
             This is final project for Meta Front-End certification. Created by
-            Sue Brechko. See you on GitHub 🫶🏻
+            Sue Brechko. See you on{" "}
+            <a
+              href="https://github.com/shoproizoshlo/meta-little-lemmon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>{" "}
+            🫶🏻
           </div>
         </div>
       </footer>
