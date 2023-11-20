@@ -5,13 +5,23 @@ import TestimonialCard from "./TestimonialCard";
 import "./Testimonials.css";
 
 export default function Testimonials(props) {
+  const [loading, setLoading] = useState(true);
   const [testimonial, setTestimonial] = useState([]);
+
   axios
     .get(`https://little-lemon-restaurant-database.onrender.com/testimonials`)
     .then((response) => {
       setTestimonial(response.data);
+      setLoading(false);
     })
-    .catch((error) => console.log(error));
+    .catch((error) => {
+      console.log(error);
+      setLoading(false);
+    });
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
