@@ -3,6 +3,8 @@ import CallToAction from "./CallToAction";
 import "./TopOfThePage.css";
 
 export default function TopOfThePage(props) {
+  const link = props.url;
+
   return (
     <>
       <article className="top-of-page">
@@ -13,7 +15,7 @@ export default function TopOfThePage(props) {
               <h2>{props.h2}</h2>
               <p>{props.text}</p>
             </div>
-            <CallToAction url={props.url} callToAction={props.callToAction} />
+            <CallToAction callToAction={props.callToAction} onClick={link} />
           </div>
           <div className="heading-image">
             <img src={props.topPhoto} alt="restauran food" />

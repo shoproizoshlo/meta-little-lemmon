@@ -17,7 +17,7 @@ export default function HomePage() {
           text="Lille Lemon is a charming neighborhood bistro thatserves simple
               food and classic cocktails in a lively but casual environment. The
               restaurant features a locally-sourced menu with daily specials."
-          url="booking"
+          url="/booking"
           callToAction="Reserve a Table"
           topPhoto={HomepageTopImage}
         />
