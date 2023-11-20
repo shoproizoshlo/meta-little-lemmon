@@ -5,7 +5,8 @@ import DishCard from "./DishCard";
 import "./SpecialsMenu.css";
 
 export default function SpecialsMenu(props) {
-  const [dishId, setDishId] = useState();
+  // const [dishId, setDishId] = useState();
+  const [loading, setLoading] = useState(true);
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
@@ -13,10 +14,17 @@ export default function SpecialsMenu(props) {
       .get(`https://little-lemon-restaurant-database.onrender.com/menu`)
       .then((response) => {
         setMenu(response.data);
-        console.log(response.data);
+        setLoading(false);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+      });
   }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
