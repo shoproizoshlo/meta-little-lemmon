@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import HamburgerIcon from "../assets/icon-menu.svg";
 import CloseIcon from "../assets/icon-close-menu.svg";
