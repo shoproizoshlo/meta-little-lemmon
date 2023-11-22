@@ -18,13 +18,7 @@ This is a solution to the [Meta Front-End developer capstone](https://www.course
 
 ### About the final project assessment
 
-Using React you put your skills into practice to build a web app for the Little Lemon restaurant. You demonstrated your web development skills by writing code to create a form that handles table bookings for the Little Lemon restaurant. When you submit your assignment, other learners in the course will review and grade your work. They will evaluate the following:
-
-- Has the learner followed the design and implementation of the UX UI?
-- Are there appropriate accessibility tags applied?
-- Is the booking form functional and applying validation?
-- Are the semantics and responsiveness of the web app correct?
-- Has the learner committed the project to a Git repository?
+In the final project assessment, I applied React skills to build a web app for Little Lemon restaurant. Focused on UX/UI, I ensured design adherence, incorporated accessibility tags, and implemented a functional booking form with robust validation.  Proficiently, I committed the entire project to a Git repository, showcasing my version control skills for collaboration and tracking revisions. This project highlights my technical competence in React and dedication to delivering high-quality, accessible, and functional web applications. 
 
 ### Screenshot
 
@@ -49,8 +43,7 @@ Using React you put your skills into practice to build a web app for the Little 
 
 ### Continued development
 
-- Another ways to close mobile menu
-- Nav in the footer should link to the top of page
+- Sticky NavBar
 - Fix table reservation
 - Add online order feature
 - Add Login and user account feature
