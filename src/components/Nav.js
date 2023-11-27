@@ -5,10 +5,6 @@ import CloseIcon from "../assets/icon-close-menu.svg";
 import "./Nav.css";
 
 export default function Nav(props) {
-  const menuClose = () => {
-    props.setIsMenuOpen(false);
-  };
-
   return (
     <>
       <nav className="nav-container">
@@ -21,17 +17,17 @@ export default function Nav(props) {
         </div>
         <ul className="nav-menu" id="menu">
           <li className="q-line" data-target="menu-1" id="homepage">
-            <HashLink smooth to={"/#menu"} onClick={menuClose}>
+            <HashLink smooth to={"/#menu"} onClick={props.toggleMenu}>
               Home
             </HashLink>
           </li>
           <li className="q-line" data-target="menu-2" id="aboutpage">
-            <HashLink smooth to={"/about"} onClick={menuClose}>
+            <HashLink smooth to={"/about"} onClick={props.toggleMenu}>
               About
             </HashLink>
           </li>
           <li className="q-line" data-target="menu-3" id="bookingpage">
-            <HashLink smooth to={"/#menu"} onClick={menuClose}>
+            <HashLink smooth to={"/#menu"} onClick={props.toggleMenu}>
               Online Reservation
             </HashLink>
           </li>
