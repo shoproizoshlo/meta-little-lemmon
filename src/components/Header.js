@@ -1,7 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Nav from "./Nav";
 import Logo from "../assets/Logo.svg";
+import "./Header.css";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Header() {
   return (
     <>
       <div className="overlay" onClick={toggleMenu}></div>
-      <header className="d-flex justify-content-between justify-content-md-center align-items-center mt-4 ps-4 pe-4">
+      <header className="d-flex justify-content-between justify-content-md-center align-items-center fixed-top pt-2 pe-4 pb-2 ps-4">
         <img src={Logo} alt="logo" />
         <Nav isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </header>
