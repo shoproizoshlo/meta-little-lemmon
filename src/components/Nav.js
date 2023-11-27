@@ -26,7 +26,7 @@ export default function Nav(props) {
             </HashLink>
           </li>
           <li className="q-line" data-target="menu-2" id="aboutpage">
-            <HashLink smooth to={"/about"} onClick={menuClose}>
+            <HashLink smooth to={"/about"}>
               About
             </HashLink>
           </li>
