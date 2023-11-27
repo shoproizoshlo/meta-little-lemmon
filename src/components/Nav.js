@@ -26,17 +26,12 @@ export default function Nav(props) {
             </HashLink>
           </li>
           <li className="q-line" data-target="menu-2" id="aboutpage">
-            <HashLink smooth to={"/about#aboutpage"}>
+            <HashLink smooth to={"/about"} onClick={menuClose}>
               About
             </HashLink>
           </li>
-          <li
-            className="q-line"
-            data-target="menu-3"
-            id="bookingpage"
-            onClick={menuClose}
-          >
-            <HashLink smooth to={"/booking"}>
+          <li className="q-line" data-target="menu-3" id="bookingpage">
+            <HashLink smooth to={"/booking"} onClick={menuClose}>
               Online Reservation
             </HashLink>
           </li>
