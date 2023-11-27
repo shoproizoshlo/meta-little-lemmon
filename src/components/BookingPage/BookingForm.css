@@ -7,8 +7,8 @@
 }
 .form form input,
 .form form select {
-  padding: 5px 20px;
-  width: 150px;
+  padding: 5px;
+  width: 250px;
   border: 2px solid var(--primary-green);
   border-radius: 7px;
 }
@@ -19,5 +19,11 @@
 @media screen and (max-width: 767px) {
   .form {
     width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .form form input,
+  .form form select {
+    width: 150px;
   }
 }

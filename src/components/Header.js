@@ -1,5 +1,6 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import Nav from "./Nav";
 import Logo from "../assets/Logo.svg";
 import "./Header.css";
