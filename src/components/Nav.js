@@ -36,7 +36,7 @@ export default function Nav(props) {
             </HashLink>
           </li>
           <li className="q-line" data-target="menu-4" id="menupage">
-            <HashLink smooth to={"/menu#menu"}>
+            <HashLink smooth to={"/menu#menu"} onClick={props.toggleMenu}>
               Menu
             </HashLink>
           </li>
