@@ -10,7 +10,7 @@ import "./HomePage.css";
 export default function HomePage() {
   return (
     <>
-      <div id="home">
+      <div id="homepage">
         <TopOfThePage
           h1="Little Lemon"
           h2="Chicago"

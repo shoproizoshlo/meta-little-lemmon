@@ -9,7 +9,7 @@ import ThankYouPage from "./PageComponents/ThankYouPage";
 export default function Main() {
   return (
     <>
-      <main className="d-md-flex flex-column">
+      <main className="d-md-flex flex-column" id="maintop">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
