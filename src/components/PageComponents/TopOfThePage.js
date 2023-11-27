@@ -7,7 +7,7 @@ export default function TopOfThePage(props) {
 
   return (
     <>
-      <article className="top-of-page">
+      <article className="top-of-page" id="top">
         <div className="container-custom d-md-flex justify-content-between pb-5">
           <div>
             <div className="mb-5 pt-5">
