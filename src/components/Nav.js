@@ -6,8 +6,9 @@ import "./Nav.css";
 
 export default function Nav(props) {
   const menuClose = () => {
-    props.setIsMenuOpen(false);
+    props.isMenuOpen(false);
   };
+
   return (
     <>
       <nav className="nav-container">
