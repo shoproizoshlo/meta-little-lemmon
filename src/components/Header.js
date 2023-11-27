@@ -10,12 +10,14 @@ export default function Header() {
     setIsMenuOpen((prevState) => !prevState);
     let menu = document.getElementById("menu");
 
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-      document.querySelector(".overlay").style.display = "none";
-    } else {
-      menu.style.display = "block";
-      document.querySelector(".overlay").style.display = "block";
+    if (window.innerWidth < 767) {
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+        document.querySelector(".overlay").style.display = "none";
+      } else {
+        menu.style.display = "block";
+        document.querySelector(".overlay").style.display = "block";
+      }
     }
   }
   return (
