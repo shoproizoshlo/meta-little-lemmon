@@ -94,6 +94,9 @@ h6 {
   font-family: "Markazi Text", serif;
   font-weight: 500;
 }
+address {
+  margin: 0;
+}
 /*--------------------*/
 /*Setting to zero*/
 *,

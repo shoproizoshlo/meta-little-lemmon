@@ -6,26 +6,28 @@ export default function FooterContact() {
       <p className="titel">Contact</p>
       <ul>
         <li>
-          <span itemScope itemType="http://schema.org/PostalAddress">
-            <strong itemProp="streetAddress">21 S Racine Ave</strong>,{" "}
-            <span itemProp="addressLocality">Chicago</span>,{" "}
-            <span itemProp="addressRegion">IL</span>{" "}
-            <span itemProp="postalCode">60607</span>,{" "}
-            <span itemProp="addressCountry">United States</span>
-          </span>
+          <address>
+            <span itemScope itemType="http://schema.org/PostalAddress">
+              <span itemProp="streetAddress">21 S Racine Ave</span>,{" "}
+              <span itemProp="addressLocality">Chicago</span>,{" "}
+              <span itemProp="addressRegion">IL</span>{" "}
+              <span itemProp="postalCode">60607</span>,{" "}
+              <span itemProp="addressCountry">United States</span>
+            </span>
+          </address>
         </li>
         <li>
           <span itemScope itemType="http://schema.org/ContactPoint">
-            <strong itemProp="telephone">
+            <span itemProp="telephone">
               <a href="tel:+13128298697">+13128298697</a>
-            </strong>
+            </span>
           </span>
         </li>
         <li>
           <span itemScope itemType="http://schema.org/ContactPoint">
-            <strong itemProp="email">
+            <span itemProp="email">
               <a href="mailto:contact@littlelemon">contact@littlelemon</a>
-            </strong>
+            </span>
           </span>
         </li>
       </ul>
