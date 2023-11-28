@@ -99,7 +99,6 @@ export default function BookingForm(props) {
                 <MySelect
                   name="time"
                   id="time"
-                  placeholder="Choose time"
                   label="Choose time"
                   aria-labelledby="time"
                 >
@@ -135,7 +134,6 @@ export default function BookingForm(props) {
                   name="occasion"
                   id="occasion"
                   label="Occasion"
-                  placeholder="Choose occasion"
                   aria-labelledby="occasion"
                 >
                   <option value="">Select a occasion</option>
