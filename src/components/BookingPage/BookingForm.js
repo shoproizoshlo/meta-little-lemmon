@@ -83,7 +83,7 @@ export default function BookingForm(props) {
                   name="date"
                   id="date"
                   type="date"
-                  placeholder="Choose date"
+                  label="Choose date"
                   aria-labelledby="date"
                   value={date}
                   onChange={(e) => handleDateChange(e)}

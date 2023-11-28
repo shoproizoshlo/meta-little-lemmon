@@ -8,8 +8,8 @@
 .form form input,
 .form form select {
   padding: 5px;
-  width: 250px;
-  height: 25px;
+  width: 300px;
+  height: 35px;
   border: 2px solid var(--primary-green);
   border-radius: 7px;
 }

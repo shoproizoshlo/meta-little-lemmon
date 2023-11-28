@@ -47,6 +47,13 @@ button,
 textarea {
   font-family: inherit;
 }
+input,
+textarea,
+select {
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+}
 input::-ms-clear {
   display: none;
 }
