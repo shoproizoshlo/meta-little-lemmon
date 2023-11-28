@@ -83,6 +83,7 @@ export default function BookingForm(props) {
                   name="date"
                   id="date"
                   type="date"
+                  placeholder="Choose date"
                   aria-labelledby="date"
                   value={date}
                   onChange={(e) => handleDateChange(e)}
@@ -98,6 +99,7 @@ export default function BookingForm(props) {
                 <MySelect
                   name="time"
                   id="time"
+                  placeholder="Choose time"
                   label="Choose time"
                   aria-labelledby="time"
                 >
@@ -116,6 +118,7 @@ export default function BookingForm(props) {
                 <Field
                   name="guests"
                   id="guests"
+                  placeholder="Enter number"
                   aria-labelledby="guests"
                   type="number"
                   min={1}
@@ -132,6 +135,7 @@ export default function BookingForm(props) {
                   name="occasion"
                   id="occasion"
                   label="Occasion"
+                  placeholder="Choose occasion"
                   aria-labelledby="occasion"
                 >
                   <option value="">Select a occasion</option>
@@ -150,6 +154,7 @@ export default function BookingForm(props) {
                 <Field
                   name="email"
                   id="email"
+                  placeholder="Enter email"
                   aria-labelledby="email"
                   type="email"
                 />
