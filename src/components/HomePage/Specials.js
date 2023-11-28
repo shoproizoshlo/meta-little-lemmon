@@ -8,7 +8,7 @@ export default function Specials() {
     <>
       <article className="container-custom">
         <section>
-          <div className="specials d-flex align-items-center justify-content-between mb-5">
+          <div className="specials d-md-flex align-items-center justify-content-between mb-5">
             <h2>This week specials</h2>
             <CallToAction onClick="/menu" callToAction="Online Menu" />
           </div>
