@@ -70,7 +70,7 @@ export default function BookingForm(props) {
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            navigate("/thank-you", { state: { formValues: values } });
+            navigate("/thank-you#menu", { state: { formValues: values } });
             setSubmitting(false);
           }, 400);
         }}
