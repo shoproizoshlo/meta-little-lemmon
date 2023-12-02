@@ -64,7 +64,6 @@ export default function BookingForm(props) {
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
             navigate("/thank-you", { state: { formValues: values } });
             setSubmitting(false);
           }, 400);
