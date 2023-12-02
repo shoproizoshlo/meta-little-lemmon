@@ -10,9 +10,14 @@
   padding: 5px;
   width: 300px;
   height: 35px;
-  border: 2px solid var(--primary-green);
+  border: 1px solid var(--primary-green);
   border-radius: 7px;
 }
+.form form input:focus,
+.form form select:focus {
+  border: 2px solid var(--primary-yellow);
+}
+
 .yellow-button {
   padding: 10px 20px;
   font-family: "Markazi Text", serif;
