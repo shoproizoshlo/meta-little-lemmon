@@ -16,9 +16,6 @@ export default function BookingForm(props) {
   );
 
   const navigate = useNavigate();
-  const handleButtonClick = () => {
-    navigate("/booking/thank-you");
-  };
 
   function handleDateChange(e) {
     setDate(e.target.value);
@@ -69,7 +66,7 @@ export default function BookingForm(props) {
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
-            handleButtonClick();
+            navigate("/thank-you");
             setSubmitting(false);
           }, 400);
         }}
@@ -162,9 +159,9 @@ export default function BookingForm(props) {
               </div>
             </div>
 
-            <CallToAction type="submit" callToAction="Book Now">
-              <button type="submit"></button>
-            </CallToAction>
+            <button type="submit" className="yellow-button">
+              Reserve
+            </button>
           </Form>
         </div>
       </Formik>

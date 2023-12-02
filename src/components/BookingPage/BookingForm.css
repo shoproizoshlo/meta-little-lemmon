@@ -13,6 +13,15 @@
   border: 2px solid var(--primary-green);
   border-radius: 7px;
 }
+.yellow-button {
+  padding: 10px 20px;
+  font-family: "Markazi Text", serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--highlight-dark);
+  border-radius: 10px;
+  background-color: var(--primary-yellow);
+}
 .form form .error {
   color: var(--secondary-peach);
 }
