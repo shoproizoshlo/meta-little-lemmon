@@ -17,7 +17,7 @@ export default function BookingForm(props) {
 
   const navigate = useNavigate();
   const handleButtonClick = () => {
-    navigate("/thank-you");
+    navigate("/booking/thank-you");
   };
 
   function handleDateChange(e) {

@@ -5,6 +5,7 @@ import AboutPage from "./AboutPage/AboutPage";
 import BookingPage from "./BookingPage/BookingPage";
 import MenuPage from "./MenuPage/MenuPage";
 import ThankYouPage from "./PageComponents/ThankYouPage";
+import Undefined from "./PageComponents/Undefined";
 
 export default function Main() {
   return (
@@ -15,7 +16,8 @@ export default function Main() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/menu" element={<MenuPage />} />
-          <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/booking/thank-you" element={<ThankYouPage />} />
+          <Route path="/booking/undefined" element={<Undefined />} />
         </Routes>
       </main>
     </>
