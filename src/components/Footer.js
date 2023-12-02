@@ -6,6 +6,12 @@ import SocialMediaLinks from "./Footer/SocialMediaLinks";
 import "./Footer.css";
 
 export default function Footer() {
+  if (window.innerWidth < 767) {
+    document.querySelector(".nav-footer").style.display = "none";
+  } else {
+    document.querySelector(".nav-footer").style.display = "block";
+  }
+
   return (
     <>
       <footer>
@@ -14,7 +20,7 @@ export default function Footer() {
             <div className="d-flex justify-content-center align-items-start">
               <img src={Logo} alt="logo" />
             </div>
-            <div>
+            <div className="nav-footer">
               <Nav />
             </div>
             <div>
