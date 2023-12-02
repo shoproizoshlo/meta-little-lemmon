@@ -1,3 +1,6 @@
 header {
   background-color: white;
 }
+img:hover {
+  cursor: pointer;
+}
