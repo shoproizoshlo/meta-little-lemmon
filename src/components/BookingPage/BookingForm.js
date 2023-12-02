@@ -134,8 +134,11 @@ export default function BookingForm(props) {
                   aria-labelledby="occasion"
                 >
                   <option value="">Select a occasion</option>
+                  <option value="romantic-dinner">Romantic dinner</option>
+                  <option value="friends-dinner">Dinner with friends</option>
                   <option value="birthday">Birthday</option>
                   <option value="anniversary">Anniversary</option>
+                  <option value="other">Other</option>
                 </MySelect>
               </div>
               <div className="error">
