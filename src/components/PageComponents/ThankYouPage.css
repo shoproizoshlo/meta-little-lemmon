@@ -8,11 +8,9 @@
   width: 50%;
   background-color: var(--highlight-light);
   border-radius: 20px;
-}
-
-.thanks li {
   text-align: center;
 }
+
 .thanks li strong {
   text-transform: capitalize;
 }

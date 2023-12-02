@@ -9,7 +9,7 @@ export default function ThankYouPage(props) {
   return (
     <>
       <div className="thanks d-flex flex-column align-items-center justify-content-center">
-        <h2>Thank You!</h2>
+        <h2 id="thanks">Thank You!</h2>
         {formValues && (
           <div>
             <ul>
