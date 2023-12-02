@@ -7,9 +7,9 @@ export default function ThankYouPage(props) {
   const location = useLocation();
   const formValues = location.state && location.state.formValues;
   return (
-    <>
+    <div className="pt-5" id="thanks">
       <div className="thanks d-flex flex-column align-items-center justify-content-center">
-        <h2 id="thanks">Thank You!</h2>
+        <h2>Thank You!</h2>
         {formValues && (
           <div>
             <ul>
@@ -23,6 +23,6 @@ export default function ThankYouPage(props) {
         )}
         <p>You will receive Email with all information</p>
       </div>
-    </>
+    </div>
   );
 }
