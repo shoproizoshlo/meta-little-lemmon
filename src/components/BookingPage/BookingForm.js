@@ -6,7 +6,6 @@ import { updateTimes } from "./BookingPage";
 import * as Yup from "yup";
 import MySelect from "./MySelect";
 import MyField from "./MyField";
-import CallToAction from "../PageComponents/CallToAction";
 import "./BookingForm.css";
 
 export default function BookingForm(props) {
