@@ -24,7 +24,7 @@ export default function Footer() {
               <SocialMediaLinks />
             </div>
           </div>
-          <div className="d-flex flex-column align-items-center">
+          <div className="copyright d-flex flex-column align-items-center">
             This is final project for Meta Front-End certification. Created by
             Sue Brechko. See you on{" "}
             <a
