@@ -1,7 +1,7 @@
 import React from "react";
 import TopOfThePage from "../PageComponents/TopOfThePage";
 import About from "./About";
-import Chefs from "../../assets/Mario-and-Adrian-A.jpg";
+import Chefs from "../../assets/Mario-and-Adrian-A.webp";
 import "./AboutPage.css";
 
 export default function AboutPage(props) {

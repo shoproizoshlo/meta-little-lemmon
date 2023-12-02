@@ -3,8 +3,8 @@ import TopOfThePage from "../PageComponents/TopOfThePage";
 import Specials from "./Specials";
 import CustomersSay from "./CustomersSay";
 import About from "../AboutPage/About";
-import HomepageTopImage from "../../assets/restauranfood.jpg";
-import AboutImage from "../../assets/restaurant-chef-B.jpg";
+import HomepageTopImage from "../../assets/restauranfood.webp";
+import AboutImage from "../../assets/restaurant-chef-B.webp";
 import "./HomePage.css";
 
 export default function HomePage() {
