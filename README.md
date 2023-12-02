@@ -43,7 +43,6 @@ In the final project assessment, I applied React skills to build a web app for L
 
 ### Continued development
 
-- Fix table reservation (thank you page)
 - Add online order feature
 - Add Login and user account feature
 - User history reservations&orders
