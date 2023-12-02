@@ -55,7 +55,13 @@ export default function BookingForm(props) {
             .required("Required"),
 
           occasion: Yup.string()
-            .oneOf(["birthday", "anniversary"])
+            .oneOf([
+              "romantic-dinner",
+              "friends-dinner",
+              "birthday",
+              "anniversary",
+              "other",
+            ])
             .required("Required"),
 
           email: Yup.string()
