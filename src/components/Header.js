@@ -8,11 +8,11 @@ import "./Header.css";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const navigate = useNavigate();
 
-  // Function to navigate to the home page
   const goToHomePage = () => {
-    navigate("/"); // Update the path based on your home page route
+    navigate("/");
+    window.scrollTo(0, 0);
   };
 
   function toggleMenu() {
