@@ -7,25 +7,29 @@ export default function SocialMediaLinks() {
       name: "Instagram",
       url: "/",
       id: 1,
+      socialMedia: "instagram",
     },
     {
       name: "Facebook",
       url: "/",
       id: 2,
+      socialMedia: "facebook",
     },
     {
       name: "TikTok",
       url: "/",
       id: 3,
+      socialMedia: "tiktok",
     },
     {
       name: "X",
       url: "/",
       id: 4,
+      socialMedia: "x-twitter",
     },
   ];
   return (
-    <div className="social-links">
+    <div className="social-links d-flex flex-column align-items-center">
       <p className="titel">Socials</p>
       <LinksList data={socialLinks} />
     </div>
