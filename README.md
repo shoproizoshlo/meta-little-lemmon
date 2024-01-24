@@ -18,7 +18,7 @@ This is a solution to the [Meta Front-End developer capstone](https://www.course
 
 ### About the final project assessment
 
-In the final project assessment, I applied React skills to build a web app for Little Lemon restaurant. Focused on UX/UI, I ensured design adherence, incorporated accessibility tags, and implemented a functional booking form with robust validation. Proficiently, I committed the entire project to a Git repository, showcasing my version control skills for collaboration and tracking revisions. This project highlights my technical competence in React and dedication to delivering high-quality, accessible, and functional web applications.
+In the project, React skills were utilized to build a web app for Little Lemon restaurant, emphasizing UX/UI, design adherence, accessibility tags, and a functional booking form with robust validation. The entire project was committed to a Git repository, showcasing version control skills for collaboration and revision tracking. This project underscores technical competence in React and dedication to delivering high-quality, accessible, and functional web applications.
 
 ### Screenshot
 
