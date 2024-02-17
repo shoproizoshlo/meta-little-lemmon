@@ -55,4 +55,4 @@ In the project, React skills were utilized to build a web app for Little Lemon r
 
 ## Author
 
-- Twitter - [@suereact](https://www.twitter.com/suereact)
+- X - [@suereact](https://www.x.com/suereact)
