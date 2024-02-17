@@ -55,5 +55,4 @@ In the project, React skills were utilized to build a web app for Little Lemon r
 
 ## Author
 
-- Website - [Sue Brechko](https://hiresue.netlify.app/)
 - Twitter - [@suereact](https://www.twitter.com/suereact)
